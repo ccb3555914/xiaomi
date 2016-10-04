@@ -162,3 +162,164 @@ a{color: #757575}
 .nf-intro {
     padding: 10px;
 }
+.tits {
+    height: 40px;
+    padding-left: 14px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #e8e8e8;
+    color: #555;
+    cursor: pointer
+}
+.regbox {
+    width: 332px;
+    padding: 30px 0;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.tits tt {
+    float: left;
+    width: 275px;
+    border-right: 1px solid #e8e8e8;
+    cursor: pointer;
+}
+.icon_cirarr {
+    float: right;
+    background: url(../img/icon_user.png);
+    width: 16px;
+    height: 16px;
+    margin: 11px 12px 0 12px;
+}
+.inputbg {
+    padding-bottom: 15px;
+}
+.labelbox1, .input_bg {
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+.labelbox1 input, .input_bg input {
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #e8e8e8;
+}
+.inputbg{
+    margin-top: 15px;
+}
+.inputbg input {
+    width: 310px;
+}
+.err_tip {
+    margin-top: -8px;
+}
+.err_tip, .err_tip_independ {
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #ff6700;
+    display: none;
+}
+.icon_error1, .err_tip_independ {
+    background: url(../img/1.png) no-repeat;
+}
+.icon_error1 {
+    width: 14px;
+    height: 14px;
+    margin: -1px 5px 0 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+.err_tip span {
+    vertical-align: middle;
+}
+.inputcode .code {
+    width: 170px;
+}
+.btn_reg_1 {
+    background-color: #ff6700;
+    margin-top: 25px;
+    border: 1px solid rgba(186,186,186,0.3);
+    color: #fff;
+}
+.btn332 {
+    width: 330px;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+}
+.msg {
+    margin-top: 10px;
+    color: #9d9d9d;
+}
+.top1{
+    padding: 0 ;
+    padding-bottom: 22px;
+}
+.layout1{
+    min-height: 502px;
+}
+.top1 .header_tit_txt {
+    padding-top: 42px;
+    margin-bottom: 0;
+}
+input{
+   outline: none;
+}
+.yzm{
+    background: url(../img/yzm1.jpg);
+    float: right;
+    width: 125px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 24px;
+    text-align: center;
+}
+.yzm:hover{
+    cursor: pointer;
+}
+.sryzm{
+    margin-bottom: 15px;
+}
+.sryzm input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #e8e8e8;
+    line-height: 40px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.sryzm span{
+    display: inline-block;
+    width: 76px;
+    height: 40px;
+    border: 1px solid #e8e8e8;
+    line-height: 40px;
+    text-align: center; 
+    margin-left: 9px;
+}
+.sryzm span:hover{
+    cursor: pointer;
+    background-color: #ececec;
+}
+.btn_reg_2 {
+    background: #fff;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    color: #7c7c7c;
+}
+.regbox1 p{
+    color: #666666;
+}
+.disabled{
+    background: none !important;
+    color: #9d9d9d !important;
+    cursor: default !important;
+}
