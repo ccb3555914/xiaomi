@@ -50,18 +50,8 @@ $(document).ready(function() {
 			$("#dis_yzm").css("display","block")
 			$("#syzm").css("border-color","#ff6700")
 		}else{
+			$.cookie("phonenumber",$("#phone").val())
 			window.location="register1.html"
 		}
 	})
-	// $(".form-horizontal").submit(function  (argument) {
-	// 	if($("#username").val()==""||$("#inputPassword").val()==""){
-	// 	alert("请填写完整后注册")
-	// 	}else{
-	// 		$.cookie("inputUserName",$("#username").val(),{expires:99999})
-	// 		$.cookie("inPassword",$("#inputPassword").val(),{expires:99999})
-	// 		alert("注册成功请登录")
-	// 		window.location="login1.html"
-	// 	}
-	// 	return false
-	// })
 })
