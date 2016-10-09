@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script src="js/jquery_1.11.3.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/login1.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+<div class="warpper">
+	<div class="warp">
+		<div class="layout">
+			<div class="mianbox">
+				<div class="top">
+					<img src="img/logo.jpg" alt="">
+					<h4 class="header_tit_txt" id="login-title">小米帐号登录</h4>
+				</div>
+				<div id="main">
+					<form action="register_submit" method="post" accept-charset="utf-8">
+						<label class="labelbox usename">
+							<input class="item_account" autocomplete="off" type="text" name="user" id="username" placeholder="邮箱/手机号码/小米帐号">
+						</label>
+						<label class="labelbox passw">
+							<input type="password" placeholder="密码" autocomplete="off" name="pwd" id="pwd">
+						</label>
+						<div class="h10"></div>
+						<div class="err_tip" style="display: block;">
+					      <div class="dis_box dis_mm"><em class="icon_error1"></em><span>请输入密码</span></div>
+						  <div class="dis_box dis_zh"><em class="icon_error1"></em><span>请输入账号</span></div>
+						  <div class="dis_box dis_yhm"><em class="icon_error1"></em><span>用户名不正确</span></div>
+						  <div class="dis_box dis_yhmmm"><em class="icon_error1"></em><span>用户名或密码不正确</span></div>
+					    </div>
+						<input class="ljdl btnadpt btn_orange" id="login-button" type="submit" value="立即登录">
+						<fieldset class="oth_type_tit">
+                        	<legend align="center" class="oth_type_txt">其他方式登录</legend>
+                      	</fieldset>
+                      	<div class="oth_type_links">
+                        <a class="icon_type btn_qq sns-login-link" data-type="qq" href="" title="QQ登录" target="_blank"><i class="btn_sns_icontype icon_default_qq"></i></a>
+                        <a class="icon_type btn_weibo sns-login-link" data-type="weibo" href="" title="微博登录" target="_blank"><i class="btn_sns_icontype icon_default_weibo"></i></a>
+                        <a class="icon_type btn_alipay sns-login-link" data-type="alipay" href="" title="支付宝登录" target="_blank"><i class="btn_sns_icontype icon_default_alipay"></i></a>
+                     	</div>
+				</form>
+				<div class="n_links_area" id="custom_display_64">
+		            <a class="outer-link" href="register.html">注册小米帐号</a><span>|</span>
+		            <a class="outer-link" href="">忘记密码？</a>
+			    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="custom_display_4" class="n-footer">  
+      <div class="nf-link-area clearfix">
+        <ul class="lang-select-list">
+          <li><a href="">简体</a>|</li>
+          <li><a href="">繁体</a>|</li>
+          <li><a href="">English</a>|</li>
+          <li><a href="">常见问题</a></li>
+        </ul>
+      </div>
+      <p class="nf-intro"><span>小米公司版权所有-京ICP备10046444-<a class="beian-record-link" target="_blank" href=""><span><img src=""></span>京公网安备11010802020134号</a>-京ICP证110507号</span></p>
+    </div>
+</div>
+</body>
+</html>

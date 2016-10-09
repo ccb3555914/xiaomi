@@ -5,8 +5,13 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/jquery_1.11.3.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
+<div class="warp">
 	<div id="top">
 		<ul class="left">
 			<a href="" title="">小米商城</a>
@@ -30,17 +35,82 @@
 			<a href="" title="">Select Region</a>
 		</ul>
 		<ul class="right">
-			<a href="login1.html">登录</a>
-			<span class="sep">|</span>
-			<a href="register.html">注册</a>
+			<b class="user" href="" title="">
+				<a href="login1.html">登录</a>
+				<span class="sep">|</span>
+				<a href="register.html">注册</a>
+			</b>
 			<span class="sep">|</span>
 			<a href="">消息通知</a>
-			<a class="cart" href="" title="">购物车（<span>3</span>）
+			<span class="sep">|</span>
+			<b class="mydd" >
+				<a href="">我的订单</a>
+				<span class="sep">|</span>
+			</b>
+			<a class="cart" href="" title=""><i class="iconfont">&#xe601;</i>购物车（<span>3</span>）
 			<div id="bigcart"></div>
 			</a>
 		</ul>
-		
 	</div>
+	<div class="header">
+		<img class="img1" src="img/logo.jpg" alt="小米官网">
+		<div class="doodle">
+		</div>
+		<div class="topnav">
+			<ul class="topnavp">
+				<li>
+					<span class="name">小米手机</span>
+				</li>
+			</ul>
+			<div class="topnavlist">
+				<ul>
+					<li class="noleft"><img src="jsonimg/5s-110!160x110.jpg" alt=""><p><a href="">小米手机</a></p><p><span>1999</span></p></li>
+				</ul>
+			</div>
 
+		</div>
+		<ul class="topnavp1">
+			<li>
+				<span class="name"><a href="" title="">服务</a></span>
+			</li>
+			<li>
+				<span class="name"><a href="" title="">社区</a></span>
+			</li>
+		</ul>
+		<div class="header-search">
+            <form id="J_searchForm" class="search-form clearfix" action="//search.mi.com/search" method="get">
+                <input class="search-text" type="search" id="search" name="keyword" autocomplete="off" data-search-config="{'defaultWords':[{'Key':'小米手机5','Rst':11},{'Key':'空气净化器2','Rst':1},{'Key':'活塞耳机','Rst':4},{'Key':'小米路由器','Rst':8},{'Key':'移动电源','Rst':21},{'Key':'运动相机','Rst':3},{'Key':'小蚁摄像机','Rst':2},{'Key':'小米体重秤','Rst':1},{'Key':'小米插线板','Rst':13},{'Key':'配件优惠套装','Rst':32}]}">
+                <input type="submit" class="search-btn iconfont" value="&#xe600;">
+                <div class="search-hot-words">
+                    <a href="//item.mi.com/buyphone/mi5s" data-stat-id="9649220e5614d113" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-9649220e5614d113', '//item.mi.com/buyphone/mi5s', 'pcpid']);">小米5s首发</a><a href="//www.mi.com/mitv3s/55/" data-stat-id="e3f181b21a68f720" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-e3f181b21a68f720', '//www.mi.com/mitv3s/55/', 'pcpid']);">人工智能电视</a>                </div>
+            <div id="J_keywordList" class="keyword-list hide"><ul class="result-list"></ul></div></form>
+        </div>
+	</div>
+	<div class="banner">
+		<div id="scroll_box">
+			<ul class="clearfix1">
+			</ul>
+			<div class="slider-nav">
+ 			</div>
+			<div id="prev" class="btn">&lt;</div>
+			<div id="next" class="btn">&gt;</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li>手机 电话卡<i class="iconfont">&#xe602;</i></li>
+				<li>手机 电话卡</li>
+				<li>手机 电话卡</li>
+				<li>手机 电话卡</li>
+				<li>手机 电话卡</li>
+				<li>手机 电话卡</li>
+				<li>手机 电话卡</li>
+				<li>手机 电话卡</li>
+				<li>手机 电话卡</li>
+				<li>手机 电话卡</li>
+			</ul>
+		</div>
+	</div>
+</div>
 </body>
+
 </html>
