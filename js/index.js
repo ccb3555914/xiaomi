@@ -3,42 +3,77 @@ $(document).ready(function() {
 	var str1=""
 	var oName=""
 	var num=0
+	var strznyj=""
+	var strdp=""
+	var tablistli=""
+	var tablistliname=""
+	var tabnum=0
+	var rightul1str=""
 	var usename=window.location.search.replace("?","")
 	if(usename!=""){
 		$(".user").html("<a href='###'>"+usename+"</a>")
 		$(".mydd").css("display","inline-block")
 	}
 	$.get('js/product01.json',function (data) {
-	for (var i = 0; i < data.length; i++) {
-		str+="<li><span><a href=''>"+data[i].name+"</a></span></li>"
-	};
-	//var str="<img src='"+data[0].product[0].img+"' alt=''>"
-	$(".topnavp").html(str)
-	$(".topnavlist").mouseout(function  (event) {
-		console.log('1');
-		$(".topnavlist").slideUp();
-		var e = window.event || event;
-		if ( e.stopPropagation ){
-		e.stopPropagation();
-		}else{
-		window.event.cancelBubble = true;
-		}
+		var datanav=data.nav
+		var znyj=data.znyj
+		var dp=data.dp
 		
-	})
-	$(".topnavp a").mouseover(function  (argument) {
-		$(".topnavlist").slideDown();
-		str1=""
-		oName=$(this).html()
-		for (var i = 0; i < data.length; i++) {
-			if(oName==data[i].name){
-				num=i
-			}
+		for (var i = 0; i < dp.length; i++) {
+			tablistli+="<li>"+dp[i].name+"</li>"
 		};
-		for (var i = 0; i < data[num].product.length; i++) {
-			str1+="<li><img src='"+data[num].product[i].img+"' alt=''><p>"+data[num].product[i].name+"</p><p><span>"+data[num].product[i].price+"</span></p></li>"
+		$(".tab-list").html(tablistli)
+		$(".tab-list li:first").addClass('tab-active')
+
+		$(".tab-list li").each(function  (index) {
+		$(this).mouseover(function(event) {
+			rightul1str=""
+			tablistliname=$(this).html()
+			for (var i = 0; i < dp.length; i++) {
+				if(tablistliname==dp[i].name){
+				tabnum=i
+				}
+			};
+			for (var i = 0; i < dp[tabnum].product.length; i++) {
+				rightul1str+="<li class='floor_goods_wrap_li'><a class='floor_goods_img'><img src='"+dp[tabnum].product[i].img+"'></a><a class='floor_goods_tit'>"+dp[tabnum].product[i].name+"</a><a class='floor_goods_price'>"+dp[tabnum].product[i].price+"</a><a class='floor_goods_txt'>"+dp[tabnum].product[i].tit+"</a></li>"
+			};
+			$(".floor_goods_wrap1 .rightul").html(rightul1str)
+			$(this).addClass('tab-active')
+			$(this).siblings().removeClass('tab-active')
+			});
+		})
+		for (var i = 1; i < znyj.length; i++) {
+			strznyj+="<li class='floor_goods_wrap_li'><a class='floor_goods_img'><img src='"+znyj[i].img+"'></a><a class='floor_goods_tit'>"+znyj[i].name+"</a><a class='floor_goods_txt'>"+znyj[i].tit+"</a><a class='floor_goods_price'>"+znyj[i].price+"</a></li>"
 		};
-		$(".topnavlist ul").html(str1)
-	})
+		$(".floor_goods_wrap2 .rightul").html(strznyj)
+		
+		for (var i = 0; i < datanav.length; i++) {
+			str+="<li><span><a href=''>"+datanav[i].name+"</a></span></li>"
+		};
+		$(".topnavp").html(str)
+		$(".topnavlist").mouseleave(function  (event) {
+			$(".topnavlist").slideUp();
+		})
+		$(".topnav").mouseleave(function  (event) {
+			$(".topnavlist").slideUp();
+		})
+		$(".topnavlist").mouseover(function  (event) {
+			$(".topnavlist").css("display","block");
+		})
+		$(".topnavp a").mouseover(function  (argument) {
+			$(".topnavlist").slideDown();
+			str1=""
+			oName=$(this).html()
+			for (var i = 0; i < datanav.length; i++) {
+				if(oName==datanav[i].name){
+					num=i
+				}
+			};
+			for (var i = 0; i < datanav[num].product.length; i++) {
+				str1+="<li><img src='"+datanav[num].product[i].img+"' alt=''><p>"+datanav[num].product[i].name+"</p><p><span>"+datanav[num].product[i].price+"</span></p></li>"
+			};
+			$(".topnavlist ul").html(str1)
+		})
 	});
 	$.get("js/banner.json",function(data) {
 		$.each(data,function  (index,value) {
@@ -48,7 +83,6 @@ $(document).ready(function() {
 		 $("#scroll_box li:first-child").clone().appendTo(".clearfix1")
 		var $ul=$("#scroll_box ul")
 		var $li=$("#scroll_box li")
-		console.log($li);
 		var len=$("#scroll_box li").length;
 		var perWidth=$li.outerWidth();
 		$ul.css("width",perWidth*len);
@@ -99,4 +133,71 @@ $(document).ready(function() {
 	$("#scroll_box .btn").mouseout(function  (argument) {
 		$("#scroll_box .btn").css("background","")
 	})
+
+	var strnav=""
+	var navName=""
+	var strnavlist1=""
+	var strnavlist2=""
+	var strnavlist3=""
+	$.get('js/nav.json',function (data) {
+		for (var i = 0; i < data.length; i++) {
+			strnav+="<li>"+data[i].name+"</li>"
+		}
+		$(".nav ul").html(strnav)
+		$(".nav li").mouseover(function  (argument) {
+			$(".navlist").css("display","block");
+			strnavlist1=""
+			strnavlist2=""
+			strnavlist3=""
+			navName=$(this).html()
+			for (var i = 0; i < data.length; i++) {
+				if(navName==data[i].name){
+					num=i
+				}
+			};
+			for (var i = 0; i < data[num].product.length; i++) {
+			strnavlist1+="<li><a href='###' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
+				
+			}
+				for (var i = 6; i < data[num].product.length; i++) {
+				strnavlist2+="<li><a href='###' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
+			}
+				for (var i = 12; i < data[num].product.length; i++) {
+				strnavlist2+="<li><a href='###' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
+			}			
+			$(".navlist .ul1").html(strnavlist1)
+			$(".navlist .ul2").html(strnavlist2)
+			$(".navlist .ul3").html(strnavlist3)
+			$(".navlist ul").each(function  (argument) {
+				if($(this).html()==""){
+				$(this).css("display","none")
+				}else{
+					$(this).css("display","block")
+				}
+			})
+		})
+	})
+	$(".nav").mouseleave(function(event) {
+		$(".navlist").css("display","none")
+	});
+	$(".navlist").mouseleave(function(event) {
+		$(this).css("display","none")
+	});
+	$(".navlist").mouseover(function(event) {
+		$(this).css("display","block")
+	});
+	var a=0
+	var width_mianli=$(".main2scroll li").outerWidth();
+	var len1=$(".main2scroll li").length
+	$(".main2scroll").css("width",(width_mianli+14)*len1)
+	var timer1=setInterval(function  (argument) {
+		a++
+		if(a%2==0){
+			$(".main2scroll").stop().animate({"margin-left":0})
+		}else{
+			$(".main2scroll").stop().animate({"margin-left":-(width_mianli+14)*5+14})
+		}
+	},3000)
+	
+
 })

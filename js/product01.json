@@ -1,4 +1,4 @@
-﻿[
+﻿{"nav":[
 	{
 		"name":"小米手机",
 		"id":"0001",
@@ -59,5 +59,55 @@
 			{"img":"jsonimg/air2!160x110.jpg","name":"小米空气净化器 2","price":"699元","id":"00074"},
 			{"img":"jsonimg/xiaobaishexiangji!160x110.jpg","name":"智能摄像机","price":"149元起","id":"00075"},
 			{"img":"jsonimg/zhinengyingjian!160x110.jpg","name":"查看全部</br>智能硬件","price":"","id":"00076"}]
-	}
-]
+	}],
+	"znyj":[{"name":"小米净水器","id":"00072","img":"img/znyj/809aed51-f9b9-482e-a249-93d44225439e.jpg"},
+		{"img":"img/znyj/376f5f19-d1f5-4f87-8ef9-38e86891bc87.jpg","name":"小米路由器3","price":"149元","id":"00062","tit":"四天线设计，更安全更稳定","sale":"新品"},
+		{"img":"img/znyj/T1OVC_ByY_1RXrhCrK!220x220.jpg","name":"米家压力IH电饭煲","price":"999元","id":"00073","tit":"智能烹饪，压力 IH 加热","sale":"免邮费"},
+		{"img":"img/znyj/T1PXhgBbdT1RXrhCrK!220x220.jpg","name":"九号平衡车","price":"1999元","id":"00071","tit":"年轻人的酷玩具，骑行遥控两种玩法","sale":""},
+		{"img":"img/znyj/376f5f19-d1f5-4f87-8ef9-38e86891bc87.jpg","name":"小米路由器3","price":"149元","id":"00062","tit":"四天线设计，更安全更稳定","sale":"新品"},
+		{"img":"img/znyj/T1OVC_ByY_1RXrhCrK!220x220.jpg","name":"米家压力IH电饭煲","price":"999元","id":"00073","tit":"智能烹饪，压力 IH 加热","sale":"免邮费"},
+		{"img":"img/znyj/T1PXhgBbdT1RXrhCrK!220x220.jpg","name":"九号平衡车","price":"1999元","id":"00071","tit":"年轻人的酷玩具，骑行遥控两种玩法","sale":""},
+		{"img":"img/znyj/376f5f19-d1f5-4f87-8ef9-38e86891bc87.jpg","name":"小米路由器3","price":"149元","id":"00062","tit":"四天线设计，更安全更稳定","sale":"新品"},
+		{"img":"img/znyj/T1OVC_ByY_1RXrhCrK!220x220.jpg","name":"米家压力IH电饭煲","price":"999元","id":"00073","tit":"智能烹饪，压力 IH 加热","sale":"免邮费"}],
+	"dp":[{"name":"热门",
+			"product":[
+		{"img":"img/znyj/T12HJvByEv1RXrhCrK.jpg","name":"小米移动电源10000mAh","price":"79元","id":"00062","tit":"19.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1ycK_BjYv1RXrhCrK.jpg","name":"小米圈铁耳机","price":"99元","id":"00073","tit":"2万人评价","sale":"免邮费","pl":"客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...","from":"5884545"},
+		{"img":"img/znyj/T12HJvByEv1RXrhCrK.jpg","name":"小米移动电源10000mAh","price":"79元","id":"00062","tit":"19.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1ycK_BjYv1RXrhCrK.jpg","name":"小米圈铁耳机","price":"99元","id":"00073","tit":"2万人评价","sale":"免邮费","pl":"客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...","from":"5884545"},
+		{"img":"img/znyj/T12HJvByEv1RXrhCrK.jpg","name":"小米移动电源10000mAh","price":"79元","id":"00062","tit":"19.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1ycK_BjYv1RXrhCrK.jpg","name":"小米圈铁耳机","price":"99元","id":"00073","tit":"2万人评价","sale":"免邮费","pl":"客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...","from":"5884545"},
+		{"img":"img/znyj/T12HJvByEv1RXrhCrK.jpg","name":"小米移动电源10000mAh","price":"79元","id":"00062","tit":"19.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1ycK_BjYv1RXrhCrK.jpg","name":"小米圈铁耳机","price":"99元","id":"00073","tit":"2万人评价","sale":"免邮费","pl":"客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...","from":"5884545"}]},
+		{"name":"耳机音箱",
+			"product":[
+		{"img":"img/znyj/pms_1467184989.74561304!220x220.jpg","name":"小米圈铁耳机 银色","price":"99元","id":"00062","tit":"19.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1LqYgBCWv1RXrhCrK!220x220.jpg","name":"小米随身蓝牙音箱","price":"69元","id":"00073","tit":"9987人评价","sale":"免邮费","pl":"客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...","from":"同路者"},
+		{"img":"img/znyj/pms_1467184989.74561304!220x220.jpg","name":"小米圈铁耳机 银色","price":"99元","id":"00062","tit":"19.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1LqYgBCWv1RXrhCrK!220x220.jpg","name":"小米随身蓝牙音箱","price":"69元","id":"00073","tit":"9987人评价","sale":"免邮费","pl":"客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...","from":"同路者"},
+		{"img":"img/znyj/pms_1467184989.74561304!220x220.jpg","name":"小米圈铁耳机 银色","price":"99元","id":"00062","tit":"19.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1LqYgBCWv1RXrhCrK!220x220.jpg","name":"小米随身蓝牙音箱","price":"69元","id":"00073","tit":"9987人评价","sale":"免邮费","pl":"客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...","from":"同路者"},
+		{"img":"img/znyj/pms_1467184989.74561304!220x220.jpg","name":"小米圈铁耳机 银色","price":"99元","id":"00062","tit":"19.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1LqYgBCWv1RXrhCrK!220x220.jpg","name":"小米随身蓝牙音箱","price":"69元","id":"00073","tit":"9987人评价","sale":"免邮费","pl":"客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...","from":"同路者"}]},
+		{"name":"电源",
+		"product":[{"img":"img/znyj/T1AcE_Bghv1RXrhCrK.jpg","name":"小米移动电源5000mAh","price":"49元","id":"00062","tit":"9.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1vSDQB4_T1RXrhCrK!220x220.jpg","name":"10000mAh小米移动电源保护套","price":"19.9元","id":"00073","tit":"2.1万人评价","sale":"免邮费","pl":"可好了，能有效的保护手机了，再也不用担心移动电源被磨...","from":"5884545"},
+		{"img":"img/znyj/T1AcE_Bghv1RXrhCrK.jpg","name":"小米移动电源5000mAh","price":"49元","id":"00062","tit":"9.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1vSDQB4_T1RXrhCrK!220x220.jpg","name":"10000mAh小米移动电源保护套","price":"19.9元","id":"00073","tit":"2.1万人评价","sale":"免邮费","pl":"可好了，能有效的保护手机了，再也不用担心移动电源被磨...","from":"5884545"},
+		{"img":"img/znyj/T1AcE_Bghv1RXrhCrK.jpg","name":"小米移动电源5000mAh","price":"49元","id":"00062","tit":"9.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1vSDQB4_T1RXrhCrK!220x220.jpg","name":"10000mAh小米移动电源保护套","price":"19.9元","id":"00073","tit":"2.1万人评价","sale":"免邮费","pl":"可好了，能有效的保护手机了，再也不用担心移动电源被磨...","from":"5884545"},
+		{"img":"img/znyj/T1AcE_Bghv1RXrhCrK.jpg","name":"小米移动电源5000mAh","price":"49元","id":"00062","tit":"9.9万人评价","sale":"新品","pl":"这个小巧玲珑啊，比10400安的小了好说，感觉不错,...","from":"LIN翼"},
+		{"img":"img/znyj/T1vSDQB4_T1RXrhCrK!220x220.jpg","name":"10000mAh小米移动电源保护套","price":"19.9元","id":"00073","tit":"2.1万人评价","sale":"免邮费","pl":"可好了，能有效的保护手机了，再也不用担心移动电源被磨...","from":"5884545"}
+		]},
+		{"name":"电池存储卡",
+			"product":[
+		{"img":"img/znyj/T1sRhTBsYT1RXrhCrK!220x220.jpg","name":"SanDisk 16GB存储卡（Class4）","price":"26.9元","id":"00062","tit":"7.9万人评价","sale":"新品","pl":"物美价廉，正品","from":"kdfksf"},
+		{"img":"img/znyj/T1xxVTBghv1RXrhCrK!220x220.jpg","name":"彩虹5号电池（10粒装）","price":"9.9元","id":"00073","tit":"2万人评价","sale":"免邮费","pl":"价格实惠，外环好看，还有盒子便于保管，不错。","from":"jdjf"},
+		{"img":"img/znyj/T1sRhTBsYT1RXrhCrK!220x220.jpg","name":"SanDisk 16GB存储卡（Class4）","price":"26.9元","id":"00062","tit":"7.9万人评价","sale":"新品","pl":"物美价廉，正品","from":"kdfksf"},
+		{"img":"img/znyj/T1xxVTBghv1RXrhCrK!220x220.jpg","name":"彩虹5号电池（10粒装）","price":"9.9元","id":"00073","tit":"2万人评价","sale":"免邮费","pl":"价格实惠，外环好看，还有盒子便于保管，不错。","from":"jdjf"},
+		{"img":"img/znyj/T1sRhTBsYT1RXrhCrK!220x220.jpg","name":"SanDisk 16GB存储卡（Class4）","price":"26.9元","id":"00062","tit":"7.9万人评价","sale":"新品","pl":"物美价廉，正品","from":"kdfksf"},
+		{"img":"img/znyj/T1xxVTBghv1RXrhCrK!220x220.jpg","name":"彩虹5号电池（10粒装）","price":"9.9元","id":"00073","tit":"2万人评价","sale":"免邮费","pl":"价格实惠，外环好看，还有盒子便于保管，不错。","from":"jdjf"},
+		{"img":"img/znyj/T1sRhTBsYT1RXrhCrK!220x220.jpg","name":"SanDisk 16GB存储卡（Class4）","price":"26.9元","id":"00062","tit":"7.9万人评价","sale":"新品","pl":"物美价廉，正品","from":"kdfksf"},
+		{"img":"img/znyj/T1xxVTBghv1RXrhCrK!220x220.jpg","name":"彩虹5号电池（10粒装）","price":"9.9元","id":"00073","tit":"2万人评价","sale":"免邮费","pl":"价格实惠，外环好看，还有盒子便于保管，不错。","from":"jdjf"}]}
+		]
+}

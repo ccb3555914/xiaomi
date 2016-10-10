@@ -2,40 +2,31 @@
 	{
 		"name":"手机 电话卡",
 		"id":"0011",
-		"product":[{"img":"jsonimg/5s-110!160x110.jpg","name":"小米5s","price":"1999元起","id":"00011"},
-			{"img":"jsonimg/5splus-220!160x110.jpg","name":"小米5s Plus","price":"2299元起","id":"00012"},
-			{"img":"jsonimg/mi5!160x110.jpg","name":"小米手机5","price":"1599元起","id":"00013"},
-			{"img":"jsonimg/maxdingbu!160x110.jpg","name":"小米MAX","price":"1299元起","id":"00014"}]
-	},{
-		"name":"红米",
-		"id":"0002",
-		"product":[{"img":"jsonimg/hongmipro-320!160x110.jpg","name":"红米Pro","price":"1499元起","id":"00021"},
-			{"img":"jsonimg/hongmipro-320!160x110.jpg","name":"红米Note 4","price":"899元起","id":"00022"},
-			{"img":"jsonimg/hongmi3s!160x110.jpg","name":"红米Note 3","price":"799元起","id":"00023"},
+		"product":[{"img":"img/navjsonimg/5sdaohang80.jpg","name":"小米5s","price":"1999元起","id":"00011"},
+			{"img":"img/navjsonimg/5splusdaohang80.jpg","name":"小米5s Plus","price":"2299元起","id":"00012"},
+			{"img":"img/navjsonimg/mi5bar80.jpg","name":"小米手机5","price":"1599元起","id":"00013"},
+			{"img":"img/navjsonimg/maxbar80.jpg","name":"小米MAX","price":"1299元起","id":"00014"},
+			{"img":"img/navjsonimg/hmnote4-300.jpg","name":"红米Note 4","price":"899元起","id":"00022"},
+			{"img":"img/navjsonimg/note3.jpg","name":"红米Note 3","price":"799元起","id":"00023"},
 			{"img":"jsonimg/hongmi3s!160x110.jpg","name":"红米手机3s","price":"699元起","id":"00024"},
-			{"img":"jsonimg/hongmi3s!160x110.jpg","name":"红米手机3","price":"699元起","id":"00025"},
-			{"img":"jsonimg/320-220!160x110.jpg","name":"红米手机3X","price":"699元起","id":"00026"}]
+			{"img":"img/navjsonimg/hmnote4-300.jpg","name":"红米Pro","price":"1499元起","id":"00021"},
+			{"img":"img/navjsonimg/hongmi3.jpg","name":"红米手机3","price":"699元起","id":"00025"},
+			{"img":"img/navjsonimg/3X80.jpg","name":"红米手机3X","price":"699元起","id":"00026"}]
 	},{
-		"name":"平板·笔记本",
+		"name":"笔记本 平板",
 		"id":"0003",
-		"product":[{"img":"jsonimg/mipad2-16!160x110.jpg","name":"小米平板2 16GB","price":"999元起","id":"00031"},
-			{"img":"jsonimg/mipad2-16!160x110.jpg","name":"小米平板2 64GB","price":"1299元起","id":"00032"},
-			{"img":"jsonimg/mipad2-64-win!160x110.jpg","name":"小米平板2 64GB Windows版","price":"1299元起","id":"00033"},
-			{"img":"jsonimg/bijiben32012.5!160x110.jpg","name":"小米笔记本Air 12.5″","price":"3499元起","id":"00034"},
-			{"img":"jsonimg/bijiben32012.5!160x110.jpg","name":"小米笔记本Air 13.3″","price":"4999元起","id":"00035"}]
+		"product":[
+			{"img":"img/navjsonimg/bijiben80.jpg","name":"小米笔记本Air 12.5″","price":"3499元起","id":"00034"},
+			{"img":"img/navjsonimg/pad2.png","name":"小米平板2 16GB","price":"999元起","id":"00031"}]
 	},{
-		"name":"电视",
+		"name":"电视 盒子",
 		"id":"0004",
 		"product":[{"img":"jsonimg/43toubu.png","name":"小米电视3s 43英寸","price":"1799元起","id":"00041"},
 			{"img":"jsonimg/48toubu.png","name":"小米电视3s 48英寸","price":"1999元起","id":"00042"},
 			{"img":"jsonimg/55toubu1.png","name":"小米电视3s 55英寸","price":"3499元起","id":"00043"},
 			{"img":"jsonimg/65toubu.png","name":"小米电视3s 65英寸","price":"4999元起","id":"00044"},
 			{"img":"jsonimg/70toubu.png","name":"小米电视3 70英寸","price":"9999元起","id":"00041"},
-			{"img":"jsonimg/43toubu.png","name":"查看全部</br>小米电视","price":"","id":"00041"}]
-	},{
-		"name":"盒子·影音",
-		"id":"0005",
-		"product":[{"img":"jsonimg/hezimini.png","name":"小米盒子mini版","price":"179元起","id":"00051"},
+			{"img":"jsonimg/hezimini.png","name":"小米盒子mini版","price":"179元起","id":"00051"},
 			{"img":"jsonimg/hezi3.png","name":"小米盒子3","price":"179元起","id":"00052"},
 			{"img":"jsonimg/hezi3s!160x110.jpg","name":"小米盒子3 增强版","price":"399元起","id":"00053"},
 			{"img":"jsonimg/zhuji!160x110.jpg","name":"小米电视主机","price":"999元起","id":"00054"},
@@ -49,15 +40,77 @@
 			{"img":"jsonimg/miwifimini!160x110.jpg","name":"小米路由器 mini","price":"129元起","id":"00063"},
 			{"img":"jsonimg/luyouqi3c!160x110.jpg","name":"小米路由器 3C 300M","price":"99元起","id":"00064"},
 			{"img":"jsonimg/miwifilite!160x110.jpg","name":"小米路由器 青春版","price":"79元起","id":"00065"},
-			{"img":"jsonimg/wifiExtension!160x110.jpg","name":"小米WiFi放大器","price":"39元起","id":"00066"}]
-	},{
-		"name":"智能硬件",
-		"id":"0007",
-		"product":[{"img":"jsonimg/scooter!160x110.jpg","name":"九号平衡车","price":"1999元","id":"00071"},
+			{"img":"jsonimg/wifiExtension!160x110.jpg","name":"小米WiFi放大器","price":"39元起","id":"00066"},
+			{"img":"jsonimg/scooter!160x110.jpg","name":"九号平衡车","price":"1999元","id":"00071"},
 			{"img":"jsonimg/water2!160x110.jpg","name":"小米净水器","price":"1299元起","id":"00072"},
 			{"img":"jsonimg/dianfanbao!160x110.jpg","name":"米家压力IH电饭煲","price":"999元","id":"00073"},
 			{"img":"jsonimg/air2!160x110.jpg","name":"小米空气净化器 2","price":"699元","id":"00074"},
-			{"img":"jsonimg/xiaobaishexiangji!160x110.jpg","name":"智能摄像机","price":"149元起","id":"00075"},
-			{"img":"jsonimg/zhinengyingjian!160x110.jpg","name":"查看全部</br>智能硬件","price":"","id":"00076"}]
+			{"img":"jsonimg/xiaobaishexiangji!160x110.jpg","name":"智能摄像机","price":"149元起","id":"00075"}]
+	},{
+		"name":"手机 电话卡",
+		"id":"0011",
+		"product":[{"img":"img/navjsonimg/5sdaohang80.jpg","name":"小米5s","price":"1999元起","id":"00011"},
+			{"img":"img/navjsonimg/5splusdaohang80.jpg","name":"小米5s Plus","price":"2299元起","id":"00012"},
+			{"img":"img/navjsonimg/mi5bar80.jpg","name":"小米手机5","price":"1599元起","id":"00013"},
+			{"img":"img/navjsonimg/maxbar80.jpg","name":"小米MAX","price":"1299元起","id":"00014"},
+			{"img":"img/navjsonimg/hmnote4-300.jpg","name":"红米Note 4","price":"899元起","id":"00022"},
+			{"img":"img/navjsonimg/note3.jpg","name":"红米Note 3","price":"799元起","id":"00023"},
+			{"img":"jsonimg/hongmi3s!160x110.jpg","name":"红米手机3s","price":"699元起","id":"00024"},
+			{"img":"img/navjsonimg/hmnote4-300.jpg","name":"红米Pro","price":"1499元起","id":"00021"},
+			{"img":"img/navjsonimg/hongmi3.jpg","name":"红米手机3","price":"699元起","id":"00025"},
+			{"img":"img/navjsonimg/3X80.jpg","name":"红米手机3X","price":"699元起","id":"00026"}]
+	},{
+		"name":"笔记本 平板",
+		"id":"0003",
+		"product":[
+			{"img":"img/navjsonimg/bijiben80.jpg","name":"小米笔记本Air 12.5″","price":"3499元起","id":"00034"},
+			{"img":"img/navjsonimg/pad2.png","name":"小米平板2 16GB","price":"999元起","id":"00031"}]
+	},{
+		"name":"电视 盒子",
+		"id":"0004",
+		"product":[{"img":"jsonimg/43toubu.png","name":"小米电视3s 43英寸","price":"1799元起","id":"00041"},
+			{"img":"jsonimg/48toubu.png","name":"小米电视3s 48英寸","price":"1999元起","id":"00042"},
+			{"img":"jsonimg/55toubu1.png","name":"小米电视3s 55英寸","price":"3499元起","id":"00043"},
+			{"img":"jsonimg/65toubu.png","name":"小米电视3s 65英寸","price":"4999元起","id":"00044"},
+			{"img":"jsonimg/70toubu.png","name":"小米电视3 70英寸","price":"9999元起","id":"00041"},
+			{"img":"jsonimg/hezimini.png","name":"小米盒子mini版","price":"179元起","id":"00051"},
+			{"img":"jsonimg/hezi3.png","name":"小米盒子3","price":"179元起","id":"00052"},
+			{"img":"jsonimg/hezi3s!160x110.jpg","name":"小米盒子3 增强版","price":"399元起","id":"00053"},
+			{"img":"jsonimg/zhuji!160x110.jpg","name":"小米电视主机","price":"999元起","id":"00054"},
+			{"img":"jsonimg/zhuji!160x110.jpg","name":"小米家庭音箱 金属版","price":"899元起","id":"00055"},
+			{"img":"jsonimg/putonban!160x110.jpg","name":"小米家庭音箱 标准版","price":"699元起","id":"00056"}]
+	},{
+		"name":"路由器",
+		"id":"0006",
+		"product":[{"img":"jsonimg/miwifi!160x110.jpg","name":"全新小米路由器","price":"699元起","id":"00061"},
+			{"img":"jsonimg/miwifi-3!160x110.png","name":"小米路由器 3 1200M","price":"149元起","id":"00062"},
+			{"img":"jsonimg/miwifimini!160x110.jpg","name":"小米路由器 mini","price":"129元起","id":"00063"},
+			{"img":"jsonimg/luyouqi3c!160x110.jpg","name":"小米路由器 3C 300M","price":"99元起","id":"00064"},
+			{"img":"jsonimg/miwifilite!160x110.jpg","name":"小米路由器 青春版","price":"79元起","id":"00065"},
+			{"img":"jsonimg/wifiExtension!160x110.jpg","name":"小米WiFi放大器","price":"39元起","id":"00066"},
+			{"img":"jsonimg/scooter!160x110.jpg","name":"九号平衡车","price":"1999元","id":"00071"},
+			{"img":"jsonimg/water2!160x110.jpg","name":"小米净水器","price":"1299元起","id":"00072"},
+			{"img":"jsonimg/dianfanbao!160x110.jpg","name":"米家压力IH电饭煲","price":"999元","id":"00073"},
+			{"img":"jsonimg/air2!160x110.jpg","name":"小米空气净化器 2","price":"699元","id":"00074"},
+			{"img":"jsonimg/xiaobaishexiangji!160x110.jpg","name":"智能摄像机","price":"149元起","id":"00075"}]
+	},{
+		"name":"手机 电话卡",
+		"id":"0011",
+		"product":[{"img":"img/navjsonimg/5sdaohang80.jpg","name":"小米5s","price":"1999元起","id":"00011"},
+			{"img":"img/navjsonimg/5splusdaohang80.jpg","name":"小米5s Plus","price":"2299元起","id":"00012"},
+			{"img":"img/navjsonimg/mi5bar80.jpg","name":"小米手机5","price":"1599元起","id":"00013"},
+			{"img":"img/navjsonimg/maxbar80.jpg","name":"小米MAX","price":"1299元起","id":"00014"},
+			{"img":"img/navjsonimg/hmnote4-300.jpg","name":"红米Note 4","price":"899元起","id":"00022"},
+			{"img":"img/navjsonimg/note3.jpg","name":"红米Note 3","price":"799元起","id":"00023"},
+			{"img":"jsonimg/hongmi3s!160x110.jpg","name":"红米手机3s","price":"699元起","id":"00024"},
+			{"img":"img/navjsonimg/hmnote4-300.jpg","name":"红米Pro","price":"1499元起","id":"00021"},
+			{"img":"img/navjsonimg/hongmi3.jpg","name":"红米手机3","price":"699元起","id":"00025"},
+			{"img":"img/navjsonimg/3X80.jpg","name":"红米手机3X","price":"699元起","id":"00026"}]
+	},{
+		"name":"笔记本 平板",
+		"id":"0003",
+		"product":[
+			{"img":"img/navjsonimg/bijiben80.jpg","name":"小米笔记本Air 12.5″","price":"3499元起","id":"00034"},
+			{"img":"img/navjsonimg/pad2.png","name":"小米平板2 16GB","price":"999元起","id":"00031"}]
 	}
 ]
