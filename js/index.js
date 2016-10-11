@@ -1,4 +1,15 @@
 $(document).ready(function() {
+	
+	$(".search-text").click(function  (argument) {
+		$(".search-form input").css("border-color","#ff6700")
+		$(".keyword-list").css("display","block")
+		$(".search-hot-words").css("display","none")
+	})
+	$(".search-text").blur(function  (argument) {
+		$(".search-form input").css("border-color","#e0e0e0")
+		$(".keyword-list").css("display","none")
+		$(".search-hot-words").css("display","block")
+	})
 	var str=""
 	var str1=""
 	var oName=""
@@ -24,7 +35,6 @@ $(document).ready(function() {
 		};
 		$(".tab-list").html(tablistli)
 		$(".tab-list li:first").addClass('tab-active')
-
 		$(".tab-list li").each(function  (index) {
 		$(this).mouseover(function(event) {
 			rightul1str=""
@@ -35,18 +45,50 @@ $(document).ready(function() {
 				}
 			};
 			for (var i = 0; i < dp[tabnum].product.length; i++) {
-				rightul1str+="<li class='floor_goods_wrap_li'><a class='floor_goods_img'><img src='"+dp[tabnum].product[i].img+"'></a><a class='floor_goods_tit'>"+dp[tabnum].product[i].name+"</a><a class='floor_goods_price'>"+dp[tabnum].product[i].price+"</a><a class='floor_goods_txt'>"+dp[tabnum].product[i].tit+"</a></li>"
+				rightul1str+="<li class='floor_goods_wrap_li'><a class='floor_goods_img'><img src='"+dp[tabnum].product[i].img+"'></a><a class='floor_goods_tit'>"+dp[tabnum].product[i].name+"</a><a class='floor_goods_price'>"+dp[tabnum].product[i].price+"</a><a class='floor_goods_txt'>"+dp[tabnum].product[i].tit+"</a><div class='review-wrapper'> <a href='##'> <span class='review'>"+dp[tabnum].product[i].pl+"</span> <span class='author'> 来自于"+dp[tabnum].product[i].from+"的评价 <span class='date'></span> </span> </a> </div><div class='flag'>"+dp[tabnum].product[i].sale+"</div></li>"
 			};
 			$(".floor_goods_wrap1 .rightul").html(rightul1str)
+			$(".flag").each(function  (i) {
+			if($(".flag").eq(i).html()=="新品"){
+				$(this).addClass('flag-new')
+			}else if($(".flag").eq(i).html()==""){
+				$(this).css("display","none")
+			}else if($(".flag").eq(i).html()=="免邮费"){
+				$(this).addClass('flag-postfree')
+			}else{
+				$(this).addClass('flag-saleoff')
+			}
+		})
 			$(this).addClass('tab-active')
 			$(this).siblings().removeClass('tab-active')
+			$(".floor_goods_wrap_li").each(function  (argument) {
+				$(this).mouseover(function(event) {
+				$(this).find(".review-wrapper").addClass('review-wrapper1')
+				});
+			})
+			$(".floor_goods_wrap_li").each(function  (argument) {
+				$(this).mouseleave(function(event) {
+				$(".review-wrapper").removeClass('review-wrapper1')
+				});
+			})
 			});
+
 		})
 		for (var i = 1; i < znyj.length; i++) {
-			strznyj+="<li class='floor_goods_wrap_li'><a class='floor_goods_img'><img src='"+znyj[i].img+"'></a><a class='floor_goods_tit'>"+znyj[i].name+"</a><a class='floor_goods_txt'>"+znyj[i].tit+"</a><a class='floor_goods_price'>"+znyj[i].price+"</a></li>"
+			strznyj+="<li class='floor_goods_wrap_li'><a class='floor_goods_img'><img src='"+znyj[i].img+"'></a><a class='floor_goods_tit'>"+znyj[i].name+"</a><a class='floor_goods_txt'>"+znyj[i].tit+"</a><a class='floor_goods_price'>"+znyj[i].price+"</a><div class='flag'>"+znyj[i].sale+"</div></li>"
 		};
 		$(".floor_goods_wrap2 .rightul").html(strznyj)
-		
+		$(".flag").each(function  (i) {
+			if($(".flag").eq(i).html()=="新品"){
+				$(this).addClass('flag-new')
+			}else if($(".flag").eq(i).html()==""){
+				$(this).css("display","none")
+			}else if($(".flag").eq(i).html()=="免邮费"){
+				$(this).addClass('flag-postfree')
+			}else{
+				$(this).addClass('flag-saleoff')
+			}
+		})
 		for (var i = 0; i < datanav.length; i++) {
 			str+="<li><span><a href=''>"+datanav[i].name+"</a></span></li>"
 		};
@@ -139,11 +181,24 @@ $(document).ready(function() {
 	var strnavlist1=""
 	var strnavlist2=""
 	var strnavlist3=""
+	var htmlnum="0"
 	$.get('js/nav.json',function (data) {
 		for (var i = 0; i < data.length; i++) {
 			strnav+="<li>"+data[i].name+"</li>"
 		}
 		$(".nav ul").html(strnav)
+		$(".nav li").each(function  (argument) {
+			$(this).click(function  (argument) {
+				if($(this).html()=="手机 电话卡"){
+					htmlnum="01"
+				}else if($(this).html()=="电视 盒子"){
+					htmlnum="02"
+				}else if($(this).html()=="路由器"){
+					htmlnum="03"
+				}
+				window.location="list.html?"+htmlnum
+			})
+		})
 		$(".nav li").mouseover(function  (argument) {
 			$(".navlist").css("display","block");
 			strnavlist1=""

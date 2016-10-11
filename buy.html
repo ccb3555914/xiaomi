@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/list.css">
+	<script src="js/jquery_1.11.3.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/list.js"></script>
+</head>
+<body>
+<div class="warp">
+	<div id="top">
+		<ul class="left">
+			<a href="" title="">小米商城</a>
+			<span class="sep">|</span>
+			<a href="" title="">MIUI</a>
+			<span class="sep">|</span>
+			<a href="" title="">米聊</a>
+			<span class="sep">|</span>
+			<a href="" title="">游戏</a>
+			<span class="sep">|</span>
+			<a href="" title="">多看阅读</a>
+			<span class="sep">|</span>
+			<a href="" title="">云服务</a>
+			<span class="sep">|</span>
+			<a href="" title="">金融</a>
+			<span class="sep">|</span>
+			<a href="" title="">小米网移动版</a>
+			<span class="sep">|</span>
+			<a href="" title="">问题反馈</a>
+			<span class="sep">|</span>
+			<a href="" title="">Select Region</a>
+		</ul>
+		<ul class="right">
+			<b class="user" href="" title="">
+				<a href="login1.html">登录</a>
+				<span class="sep">|</span>
+				<a href="register.html">注册</a>
+			</b>
+			<span class="sep">|</span>
+			<a href="">消息通知</a>
+			<span class="sep">|</span>
+			<b class="mydd" >
+				<a href="">我的订单</a>
+				<span class="sep">|</span>
+			</b>
+			<a class="cart" href="" title=""><i class="iconfont">&#xe601;</i>购物车（<span>3</span>）
+			<div id="bigcart"></div>
+			</a>
+		</ul>
+	</div>
+	<div class="header">
+		<img class="img1" src="img/logo.jpg" alt="小米官网">
+		<div class="doodle doodle1">
+			<span>全部商品分类</span>
+			
+		</div>
+		<div class="topnav">
+			<ul class="topnavp">
+				<li>
+					<span class="name">小米手机</span>
+				</li>
+			</ul>
+			<div class="topnavlist">
+				<ul>
+					<li class="noleft"><img src="jsonimg/5s-110!160x110.jpg" alt=""><p><a href="">小米手机</a></p><p><span>1999</span></p></li>
+				</ul>
+			</div>
+
+		</div>
+		<ul class="topnavp1">
+			<li>
+				<span class="name"><a href="" title="">服务</a></span>
+			</li>
+			<li>
+				<span class="name"><a href="" title="">社区</a></span>
+			</li>
+		</ul>
+		<div class="header-search">
+            <form id="J_searchForm" class="search-form clearfix" action="//search.mi.com/search" method="get">
+                <input class="search-text" type="search" id="search" name="keyword" autocomplete="off" data-search-config="{'defaultWords':[{'Key':'小米手机5','Rst':11},{'Key':'空气净化器2','Rst':1},{'Key':'活塞耳机','Rst':4},{'Key':'小米路由器','Rst':8},{'Key':'移动电源','Rst':21},{'Key':'运动相机','Rst':3},{'Key':'小蚁摄像机','Rst':2},{'Key':'小米体重秤','Rst':1},{'Key':'小米插线板','Rst':13},{'Key':'配件优惠套装','Rst':32}]}">
+                <input type="submit" class="search-btn iconfont" value="&#xe600;">
+                <div class="search-hot-words">
+                    <a href="//item.mi.com/buyphone/mi5s" data-stat-id="9649220e5614d113" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-9649220e5614d113', '//item.mi.com/buyphone/mi5s', 'pcpid']);">小米5s首发</a><a href="//www.mi.com/mitv3s/55/" data-stat-id="e3f181b21a68f720" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-e3f181b21a68f720', '//www.mi.com/mitv3s/55/', 'pcpid']);">人工智能电视</a>                </div>
+            <div id="J_keywordList" class="keyword-list"><ul class="result-list"><li data-key="小米手机5"><a href="">小米手机5<span class="result">约有11件</span></a></li><li data-key="空气净化器2"><a href="//search.mi.com/search_%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A82">空气净化器2<span class="result">约有1件</span></a></li><li data-key="活塞耳机"><a href="//search.mi.com/search_%E6%B4%BB%E5%A1%9E%E8%80%B3%E6%9C%BA">活塞耳机<span class="result">约有4件</span></a></li><li data-key="小米路由器"><a href="//search.mi.com/search_%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8">小米路由器<span class="result">约有8件</span></a></li><li data-key="移动电源"><a href="//search.mi.com/search_%E7%A7%BB%E5%8A%A8%E7%94%B5%E6%BA%90">移动电源<span class="result">约有21件</span></a></li><li data-key="运动相机"><a href="//search.mi.com/search_%E8%BF%90%E5%8A%A8%E7%9B%B8%E6%9C%BA">运动相机<span class="result">约有3件</span></a></li><li data-key="小蚁摄像机"><a href="//search.mi.com/search_%E5%B0%8F%E8%9A%81%E6%91%84%E5%83%8F%E6%9C%BA">小蚁摄像机<span class="result">约有2件</span></a></li><li data-key="小米体重秤"><a href="//search.mi.com/search_%E5%B0%8F%E7%B1%B3%E4%BD%93%E9%87%8D%E7%A7%A4">小米体重秤<span class="result">约有1件</span></a></li><li data-key="小米插线板"><a href="//search.mi.com/search_%E5%B0%8F%E7%B1%B3%E6%8F%92%E7%BA%BF%E6%9D%BF">小米插线板<span class="result">约有13件</span></a></li><li data-key="配件优惠套装"><a href="//search.mi.com/search_%E9%85%8D%E4%BB%B6%E4%BC%98%E6%83%A0%E5%A5%97%E8%A3%85">配件优惠套装<span class="result">约有32件</span></a></li></ul></div></form>
+        </div>
+	</div>
+<!-- main -->
+<div class="page-main channel buyphone-channel">
+<div class="banner">
+	<div class="nav">
+		<ul>
+			<li>手机 电话卡<i class="iconfont"></i></li>
+			<li><a href="" title="">手机 电话卡</a></li>
+			<li><a href="" title="">手机 电话卡</a></li>
+			<li><a href="" title="">手机 电话卡</a></li>
+			<a href="" title=""><li>手机 电话卡</li></a>
+			<li>手机 电话卡</li>
+			<li>手机 电话卡</li>
+			<li>手机 电话卡</li>
+			<li>手机 电话卡</li>
+			<li>手机 电话卡</li>
+		</ul>
+	</div>
+	<div class="navlist">
+		<ul class="ul1">
+		</ul>
+		<ul class="ul2">
+		</ul>
+		<ul class="ul3">
+		</ul>
+	</div>
+	<div class="container breadcrumbs"> 
+        <a href="index.html">首页</a><span class="sep">/</span>选购<span class="what">手机 · 平板</span>
+    </div>
+    <div class="container channel-nav">
+    <li class="ckqb"><a href="">查看全部</a></li>
+    <ul class="clearfix">
+        <li class="current">
+            <a>选购<span class="what">手机 · 平板</span></a>
+        </li>
+        <li>
+            <a href="">小米Max</a>
+        </li>
+        <li>
+            <a href="">小米Max</a>
+        </li>
+        <li>
+            <a href="">小米Max</a>
+        </li>
+        <li>
+            <a href="">小米Max</a>
+        </li>
+        <li>
+            <a href="">小米Max</a>
+        </li>
+        <li>
+            <a href="">小米Max</a>
+        </li>
+        <li>
+            <a href="">小米Max</a>
+        </li>
+        <li>
+            <a href="">手机对比</a>
+        </li>
+        </ul>
+    </div>
+    <img class="big" src="img/list/phone/bigimg.jpg" alt="">
+    <div class="container channel-list">
+    	<ul class="row clearfix">
+    		<li class="span10">
+                <div class="channel-list-img">
+                    <a href="##" target="_blank">
+                    <img src="img/list/phone/cms_14758929590041_dpgmR.jpg" alt="小米5s">
+                    </a>
+                </div>
+                <div class="channel-list-con clearfix">
+                    <dl class="channel-list-des">
+                        <dt>
+                            小米5s <b>1999</b><span>元起</span>
+                        </dt>
+                        <dd>"暗夜之眼"超感光相机，无孔式超声波指纹识别骁龙 821 旗舰处理器，全金属一体化机身 </dd>
+                    </dl>
+                    <p class="channel-list-btn">
+                        <a href="//item.mi.com/buyphone/mi5s" class="btn btn-line-primary" data-stat-id="3ae48c71e2477ff8" onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3ae48c71e2477ff8', '//item.mi.com/buyphone/mi5s', 'pcpid']);">立即购买</a>
+                    </p>
+                </div>
+            </li>
+            <li class="span10">
+                <div class="channel-list-img">
+                    <a href="##" target="_blank">
+                    <img src="img/list/phone/cms_14758929590041_dpgmR.jpg" alt="小米5s">
+                    </a>
+                </div>
+                <div class="channel-list-con clearfix">
+                    <dl class="channel-list-des">
+                        <dt>
+                            小米5s <b>1999</b><span>元起</span>
+                        </dt>
+                        <dd>"暗夜之眼"超感光相机，无孔式超声波指纹识别<br>骁龙 821 旗舰处理器，全金属一体化机身 </dd>
+                    </dl>
+                    <p class="channel-list-btn">
+                        <a href="//item.mi.com/buyphone/mi5s" class="btn btn-line-primary" data-stat-id="3ae48c71e2477ff8" onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3ae48c71e2477ff8', '//item.mi.com/buyphone/mi5s', 'pcpid']);">立即购买</a>
+                    </p>
+                </div>
+            </li>
+            <li class="span10">
+                <div class="channel-list-img">
+                    <a href="##" target="_blank">
+                    <img src="img/list/phone/cms_14758929590041_dpgmR.jpg" alt="小米5s">
+                    </a>
+                </div>
+                <div class="channel-list-con clearfix">
+                    <dl class="channel-list-des">
+                        <dt>
+                            小米5s <b>1999</b><span>元起</span>
+                        </dt>
+                        <dd>"暗夜之眼"超感光相机，无孔式超声波指纹识别<br>骁龙 821 旗舰处理器，全金属一体化机身 </dd>
+                    </dl>
+                    <p class="channel-list-btn">
+                        <a href="//item.mi.com/buyphone/mi5s" class="btn btn-line-primary" data-stat-id="3ae48c71e2477ff8" onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3ae48c71e2477ff8', '//item.mi.com/buyphone/mi5s', 'pcpid']);">立即购买</a>
+                    </p>
+                </div>
+            </li>
+            <li class="span10">
+                <div class="channel-list-img">
+                    <a href="##" target="_blank">
+                    <img src="img/list/phone/cms_14758929590041_dpgmR.jpg" alt="小米5s">
+                    </a>
+                </div>
+                <div class="channel-list-con clearfix">
+                    <dl class="channel-list-des">
+                        <dt>
+                            小米5s <b>1999</b><span>元起</span>
+                        </dt>
+                        <dd>"暗夜之眼"超感光相机，无孔式超声波指纹识别<br>骁龙 821 旗舰处理器，全金属一体化机身 </dd>
+                    </dl>
+                    <p class="channel-list-btn">
+                        <a href="//item.mi.com/buyphone/mi5s" class="btn btn-line-primary" data-stat-id="3ae48c71e2477ff8" onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3ae48c71e2477ff8', '//item.mi.com/buyphone/mi5s', 'pcpid']);">立即购买</a>
+                    </p>
+                </div>
+            </li>
+            <li class="span10">
+                <div class="channel-list-img">
+                    <a href="##" target="_blank">
+                    <img src="img/list/phone/cms_14758929590041_dpgmR.jpg" alt="小米5s">
+                    </a>
+                </div>
+                <div class="channel-list-con clearfix">
+                    <dl class="channel-list-des">
+                        <dt>
+                            小米5s <b>1999</b><span>元起</span>
+                        </dt>
+                        <dd>"暗夜之眼"超感光相机，无孔式超声波指纹识别<br>骁龙 821 旗舰处理器，全金属一体化机身 </dd>
+                    </dl>
+                    <p class="channel-list-btn">
+                        <a href="//item.mi.com/buyphone/mi5s" class="btn btn-line-primary" data-stat-id="3ae48c71e2477ff8" onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3ae48c71e2477ff8', '//item.mi.com/buyphone/mi5s', 'pcpid']);">立即购买</a>
+                    </p>
+                </div>
+            </li>
+            <li class="span10">
+                <div class="channel-list-img">
+                    <a href="##" target="_blank">
+                    <img src="img/list/phone/cms_14758929590041_dpgmR.jpg" alt="小米5s">
+                    </a>
+                </div>
+                <div class="channel-list-con clearfix">
+                    <dl class="channel-list-des">
+                        <dt>
+                            小米5s <b>1999</b><span>元起</span>
+                        </dt>
+                        <dd>"暗夜之眼"超感光相机，无孔式超声波指纹识别<br>骁龙 821 旗舰处理器，全金属一体化机身 </dd>
+                    </dl>
+                    <p class="channel-list-btn">
+                        <a href="//item.mi.com/buyphone/mi5s" class="btn btn-line-primary" data-stat-id="3ae48c71e2477ff8" onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3ae48c71e2477ff8', '//item.mi.com/buyphone/mi5s', 'pcpid']);">立即购买</a>
+                    </p>
+                </div>
+            </li>
+    	</ul>
+    </div>
+</div>
+</div>
+<!-- main1 -->
+<div class="channel-tips">
+	<div class="section section-02 container">
+        <dl class="section-title">
+            <dt>内置海量免费高清电影、电视</dt>
+            <dd>
+                超过 100 家视频供应商组成的视频大联盟，视频内容不断更新。今年所有院线好莱坞大片全部都有。
+            </dd>
+        </dl>
+    </div>
+    <div class="section section-03 container">
+        <dl class="section-title">
+            <dt>MIUI TV版<br>卓越的智能系统，简单易用</dt>
+            <dd>
+                MIUI是手机上深受1.5亿用户喜爱的智能系统，小米电视全系搭载专为电视打造的MIUI TV版，精心设计，简单易用，<br>
+                处处贴心。MIUI TV版的用户体验和精美设计始终优秀，一直被模仿从未被超越。
+            </dd>
+        </dl>
+    </div>
+	<div class="section container section1">
+		<p><a href="" title=""><img src="img/list/phone/phone-section-01.png" alt=""></a></p>
+		
+	</div>
+	
+	<div class="container channel-acces">
+        <dl class="channel-acces-des">
+            <dt>搭配更多智能硬件产品</dt>
+            <dd>
+                以小米手机为中心，控制智能硬件产品，轻松享受智能生活带来的方便和舒适。<br>
+                <a href="">查看更多智能硬件产品 <i class="iconfont"></i></a>
+            </dd>
+        </dl>
+        <ul class="channel-acces-list clearfix">
+            <li>
+                <a href="">
+                    <img src="//i1.mifile.cn/a1/T1ycK_BjYv1RXrhCrK!220x220.jpg" alt="小米圈铁耳机">
+                </a>
+                <dl>
+                    <dt><a href="">小米圈铁耳机</a></dt>
+                    <dd><a href=";">动圈+动铁，双发声单元</a></dd>
+                    <dd class="price">99元</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <div class="container channel-mihone">
+        <div class="channel-mihone-des">
+            <dl>
+                <dt>小米之家及官方授权维修网点</dt>
+                <dd>
+                    欢迎来小米之家解决你遇到的问题，了解最新的小米官方产品最全面的产品信息，还有很多好玩的活动等你来访。<br>
+                    你还可以前往小米授权维修网点解决售后问题，520家网点让服务随时在身边。
+                </dd>
+            </dl>
+            <p>
+                <a href="" class="btn btn-large btn-line-primary">小米之家</a>
+                <a href="" class="btn btn-large btn-line-primary">官方维修网点</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--footer-top-->
+<div class="main_wrap">
+<div class="footer-top">
+	<ul>
+    	<li><a herf="#"><img src="images/x_16.jpg" alt="" />1小时快修服务</a></li>
+        <li><a herf="#"><img src="images/x_18.jpg" alt="" />7天无理由退货</a></li>
+        <li><a herf="#"><img src="images/x_20.jpg" alt="" />15天免费换货</a></li>
+        <li><a herf="#"><img src="images/x_23.jpg" alt="" />满150元包邮</a></li>
+        <li class="bor0"><a herf="#"><img src="images/x_23.jpg" alt="" />520余家售后网点</a></li>
+    </ul>
+</div>
+<!--footr-middle-->
+<div class="foot-middle">
+	<div class="foot-middle-left">
+		<div class="flist1">
+        	<ul>
+            	<li class="flist1-li1"><a href="#">帮助中心</a></li>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式心</a></li>
+                <li><a href="#">配送方式</a></li>
+            </ul>
+        </div>
+        <div class="flist1">
+        	<ul>
+            	<li class="flist1-li1"><a href="#">帮助中心</a></li>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式心</a></li>
+                <li><a href="#">配送方式</a></li>
+            </ul>
+        </div>
+        <div class="flist1">
+        	<ul>
+            	<li class="flist1-li1"><a href="#">帮助中心</a></li>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式心</a></li>
+                <li><a href="#">预约亲临到店服务</a></li>
+            </ul>
+        </div>
+        <div class="flist1">
+        	<ul>
+            	<li class="flist1-li1"><a href="#">帮助中心</a></li>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式心</a></li>
+                <li><a href="#">配送方式</a></li>
+            </ul>
+        </div>
+        <div class="flist1">
+        	<ul>
+            	<li class="flist1-li1"><a href="#">关注我们</a></li>
+                <li><a href="#">新浪微博</a></li>
+                <li><a href="#">小米部落</a></li>
+                <li><a href="#">官方微信</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-middle-right">
+    	<h3>400-100-5678</h3>
+        <p>周一至周日 8:00-18:00</p>
+        <p>（仅收市话费）</p>
+        <a href="#"><img src="images/12.jpg"/></a>
+    </div>
+</div>
+<!--footer-->
+<div class="footerwrap">
+	<div class="f">
+	<div class="footer left">
+		<a href="#"><img src="images/logo.jpg"/></a>
+    	<p><a  class="a1" href="#">小米网</a>|<a href="#">MIUI</a>|<a href="#">多看阅读</a>|<a href="#">小米路由器</a>|<a href="#">小米后院</a>|<a href="#">小米天猫店</a>|<a href="#">小米淘宝直营店</a>|<a href="#">小米网盟</a>|<a href="#">问题反馈</a>|<a href="#">Select Region</a><span>&copy;mi.com 京ICP证11057号 京ICP备10046444号 京公网安备1101080号 京网文[2014]0059-0009号</span></p>
+	</div>
+	<div class="right fot">
+    	<p class="p1"><img src="images/z_03.jpg"/><span>诚信网站</span></p>
+        <p class="p2"><img src="images/z_05.jpg"/><span>可信网站信用评价</span></p>
+        <p><img src="images/z_07.jpg"/><span>网上交易保障中心</span></p>
+    </div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

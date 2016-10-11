@@ -1,0 +1,311 @@
+.doodle1{
+	width: 155px;
+	padding-right: 15px;
+	background: #fff;
+	position: relative;
+}
+.doodle1 span{
+	float: right;
+	line-height: 93px;
+	font-size: 17px;
+    color: #000;
+}
+.doodle1 span:hover{
+	cursor: pointer;
+}
+.channel{
+	position: relative;
+	background: #f5f5f5;
+	width: 100%;
+	overflow: hidden;
+} 
+.nav{display: none;}
+.nav{background: #fff;border:1px solid #ff6700;color: #000;}
+.nav li:hover{color:#fff;}
+.navlist{height: 460px;overflow: hidden;margin-left: 2px;}
+.breadcrumbs {
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    background: #f5f5f5;
+    color: #616161;
+}
+.channel-nav a:hover{
+	color:#ff6700;
+}
+.row {
+    margin-left: -14px;
+    _margin-left: 0;
+}
+.container {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.breadcrumbs .sep {
+    margin: 0 0.5em;
+    color: #b0b0b0;
+}
+.channel-nav li {
+    float: left;
+    padding: 0 30px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+.channel-nav {
+    background-color: #fff;
+}
+.container {
+
+    width: 1226px;
+    margin: 0 auto;
+}
+.container a{
+	font-size: 14px;
+}
+a {
+    color: #757575;
+    text-decoration: none;
+}
+.big{width: 1226px;height: 460px;}
+.big:hover{
+	cursor: pointer;
+}
+.channel-nav{
+	position: relative;
+}
+.channel-nav .ckqb{
+	padding: 0;
+	padding-left: 100px;
+	list-style: none;
+	position: absolute;right: 0;top: 0;
+	width: 12.5%;
+}
+.channel-nav .clearfix{
+	padding-right: 12.5%;
+}
+.channel-nav .current{
+	border-bottom: 1px solid #000;
+}
+.channel-list li {
+    height: 490px;
+    margin-bottom: 14px;
+    background-color: #fff;
+}
+.current span{
+	font-size: 14px;
+}
+.channel-list {
+    margin-top: 14px;
+}
+.current a{
+	color: #ff6700;
+}
+.span10 {
+    width: 606px;
+    float: left;
+    margin-left: 14px;
+    min-height: 1px;
+}
+.channel-list .channel-list-img {
+    position: relative;
+    width: 606px;
+    height: 360px;
+    text-align: center;
+    overflow: hidden;
+    _zoom: 1;
+}
+.channel-list .channel-list-con {
+    border-top: 1px solid #eee;
+    padding: 30px 0 0;
+    margin: 0 40px;
+}
+.channel-list .channel-list-des {
+    float: left;
+    width: 310px;
+}
+.channel-list .channel-list-des dt {
+	line-height: 34px;
+    font-size: 24px;
+    color: #333;
+}
+.channel-list .channel-list-des dt b {
+	font-size: 24px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.channel-list .channel-list-des dt span {
+    font-size: 14px;
+}
+.channel-list .channel-list-des dt span, .channel-list .channel-list-des dt b {
+    color: #ff6700;
+}
+.channel-list .channel-list-des dd {
+	line-height: 20px;
+	font-size: 14px;
+    height: 45px;
+    overflow: hidden;
+    _zoom: 1;
+    color: #757575;
+}
+.channel-list .channel-list-btn {
+    float: right;
+}
+.btn-line-primary {
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+}
+.btn {
+    display: inline-block;
+    width: 158px;
+    height: 38px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #b0b0b0;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #b0b0b0;
+    cursor: pointer;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+.btn-line-primary {
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+}
+.btn-line-primary:hover {
+    color: #fff;
+    background-color: #f25807;
+    border-color: #f25807;
+}
+.section img{
+	border-bottom:1px solid #e0e0e0; 
+}
+.channel-acces .channel-acces-des {
+    padding: 70px 0;
+    text-align: center;
+    color: #333;
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.channel-acces .channel-acces-des dt {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.channel-acces .channel-acces-des dd {
+    font-size: 16px;
+    line-height: 2;
+}
+.channel-acces .channel-acces-des dd a {
+    color: #ff6700;
+}
+.channel-acces .channel-acces-list li {
+    float: left;
+    height: 370px;
+    width: 407px;
+    border-right: 1px solid #e0e0e0;
+    text-align: center;
+}
+.channel-acces .channel-acces-list li dl dt {
+    margin-bottom: 5px;
+}
+.channel-acces .channel-acces-list li dl dt a {
+    color: #333;
+}
+.channel-acces .channel-acces-list li dl dd {
+    font-size: 12px;
+}
+.channel-acces .channel-acces-list li dl dd a {
+    color: #b0b0b0;
+}
+.channel-acces .channel-acces-list li dl dd.price {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ff6700;
+}
+.channel-mihone {
+    position: relative;
+    height: 600px;
+    background: url("../img/list/phone/phone-section-05.jpg") no-repeat center;
+}
+.channel-mihone .channel-mihone-des {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background-color: rgba(0,0,0,0.7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2000000", endColorstr="#b2000000")\9;
+    color: #fff;
+}
+.channel-mihone .channel-mihone-des dl {
+    float: left;
+    width: 820px;
+    padding: 40px 0 0 80px;
+}
+.channel-mihone .channel-mihone-des dl dt {
+    margin-bottom: 10px;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+.channel-mihone .channel-mihone-des dl dd {
+    line-height: 1.8;
+    color: #f5f5f5;
+}
+.channel-mihone .channel-mihone-des p {
+    float: right;
+    padding: 25px 35px 0 0;
+}
+.channel-mihone .channel-mihone-des p .btn {
+    display: block;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.btn-line-primary {
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+}
+.btn-large {
+    width: 178px;
+    height: 48px;
+    line-height: 48px;
+}
+.channel-tips .section-02 {
+	display: none;
+	border-bottom:1px solid #e0e0e0;  
+    height: 865px;
+    background: url("../img/list/tv/tv-section-01.jpg") no-repeat center bottom;
+}
+.channel-tips .section {
+    text-align: center;
+}
+.channel-tips .section .section-title {
+    margin: 0;
+    padding-top: 90px;
+}
+.channel-tips .section .section-title dt {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.3;
+}
+.channel-tips .section .section-title dd {
+    font-size: 16px;
+    line-height: 2;
+    color: #616161;
+}
+.channel-tips .section-03 {
+	display: none;
+    height: 930px;
+    border-bottom: 0;
+    background: url("../img/list/tv/tv-section-02.jpg") no-repeat center 290px;
+}
