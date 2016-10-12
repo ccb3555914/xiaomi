@@ -51,6 +51,19 @@ b{font-weight: normal;}
     height: 100px;
     background: url(../img/mi5s.gif) no-repeat center center;
 }
+.nav li{position: relative;}
+.nav li p{font-size: 14px;}
+.nav li span{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color:#e0e0e0;
+}
+.navright{ 
+    color: rgba(255,255,255,0.5);
+   }
 .topnavlist{border-top: 1px solid #e0e0e0;position: absolute;left: 0;top:100px;height: 230px;display: none;z-index: 9999;background: #fff;width: 100%;}
 .topnavlist ul li{float: left;text-align: center;width: 180px;
     padding: 35px 12px 0;position: relative;}
@@ -279,3 +292,58 @@ a:hover{
 .fot p{width:82px;float:left;line-height:16px;color:#bbbbbb;}
 .fot .p1{line-height:32px;}
 .fot .p2{margin:0 12px 0 14px;}
+.channel-mihone {
+    position: relative;
+    height: 600px;
+    background: url("../img/list/phone/phone-section-05.jpg") no-repeat center;
+}
+.channel-mihone .channel-mihone-des {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background-color: rgba(0,0,0,0.7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2000000", endColorstr="#b2000000")\9;
+    color: #fff;
+}
+.channel-mihone .channel-mihone-des dl {
+    float: left;
+    width: 820px;
+    padding: 40px 0 0 80px;
+}
+.channel-mihone .channel-mihone-des dl dt {
+    margin-bottom: 10px;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+.channel-mihone .channel-mihone-des dl dd {
+    line-height: 1.8;
+    color: #f5f5f5;
+}
+.channel-mihone .channel-mihone-des p {
+    float: right;
+    padding: 25px 35px 0 0;
+}
+.channel-mihone .channel-mihone-des p .btn {
+    display: block;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.btn-line-primary {
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+}
+.btn-large {
+    width: 178px;
+    height: 48px;
+    line-height: 48px;
+}
+.channel-tips .section-02 {
+    display: none;
+    border-bottom:1px solid #e0e0e0;  
+    height: 865px;
+    background: url("../img/list/tv/tv-section-01.jpg") no-repeat center bottom;
+}
+

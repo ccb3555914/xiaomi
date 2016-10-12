@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	
 	$(".search-text").click(function  (argument) {
 		$(".search-form input").css("border-color","#ff6700")
 		$(".keyword-list").css("display","block")
@@ -112,10 +111,11 @@ $(document).ready(function() {
 				}
 			};
 			for (var i = 0; i < datanav[num].product.length; i++) {
-				str1+="<li><img src='"+datanav[num].product[i].img+"' alt=''><p>"+datanav[num].product[i].name+"</p><p><span>"+datanav[num].product[i].price+"</span></p></li>"
+				str1+="<a href='buy.html?"+datanav[num].product[i].id+"'><li><img src='"+datanav[num].product[i].img+"' alt=''><p>"+datanav[num].product[i].name+"</p><p><span>"+datanav[num].product[i].price+"</span></p></li></a>"
 			};
 			$(".topnavlist ul").html(str1)
 		})
+		
 	});
 	$.get("js/banner.json",function(data) {
 		$.each(data,function  (index,value) {
@@ -184,10 +184,10 @@ $(document).ready(function() {
 	var htmlnum="0"
 	$.get('js/nav.json',function (data) {
 		for (var i = 0; i < data.length; i++) {
-			strnav+="<li>"+data[i].name+"</li>"
+			strnav+="<li><p>"+data[i].name+"</p><span class='iconfont navright'>&#xe605;<span></li>"
 		}
 		$(".nav ul").html(strnav)
-		$(".nav li").each(function  (argument) {
+		$(".nav p").each(function  (argument) {
 			$(this).click(function  (argument) {
 				if($(this).html()=="手机 电话卡"){
 					htmlnum="01"
@@ -199,7 +199,7 @@ $(document).ready(function() {
 				window.location="list.html?"+htmlnum
 			})
 		})
-		$(".nav li").mouseover(function  (argument) {
+		$(".nav p").mouseover(function  (argument) {
 			$(".navlist").css("display","block");
 			strnavlist1=""
 			strnavlist2=""
@@ -211,15 +211,17 @@ $(document).ready(function() {
 				}
 			};
 			for (var i = 0; i < data[num].product.length; i++) {
-			strnavlist1+="<li><a href='###' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
+			strnavlist1+="<li><a href='buy.html?"+data[num].product[i].id+"' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
 				
 			}
 				for (var i = 6; i < data[num].product.length; i++) {
-				strnavlist2+="<li><a href='###' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
+				strnavlist2+="<li><a href='buy.html?"+data[num].product[i].id+"' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
 			}
 				for (var i = 12; i < data[num].product.length; i++) {
-				strnavlist2+="<li><a href='###' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
+				strnavlist2+="<li><a href='buy.html?"+data[num].product[i].id+"' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
 			}			
+			//console.log(strnavlist1);
+			//console.log(strnavlist2);
 			$(".navlist .ul1").html(strnavlist1)
 			$(".navlist .ul2").html(strnavlist2)
 			$(".navlist .ul3").html(strnavlist3)

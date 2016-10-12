@@ -51,13 +51,13 @@ $(document).ready(function() {
 		};
 		$(".section1").html(strfooterimg)
 		for (var i = 0; i < 10; i++) {
-			strname+="<li><a href=''>"+data[a].product[i].name+"</a></li>"
+			strname+="<li><a href='buy.html?"+data[a].product[i].id+"'>"+data[a].product[i].name+"</a></li>"
 		};
 		strname="<li class='current'><a>选购<span class='what'>手机 · 平板</span></a></li>"+strname
 		$(".channel-nav .clearfix").html(strname)
 		$(".big").attr("src",data[a].bigimg)
 		for (var i = 0; i < data[a].product.length; i++) {
-			str+="<li class='span10'><div class='channel-list-img'><a href='##' target='_blank'><img src='"+data[a].product[i].img+"' alt='"+data[a].product[i].name+"'></a></div><div class='channel-list-con clearfix'><dl class='channel-list-des'><dt>"+data[a].product[i].name+" <b>"+data[a].product[i].price+"</b><span>元起</span></dt><dd>"+data[a].product[i].tit+"</dd></dl><p class='channel-list-btn'><a href='' class='btn btn-line-primary'>立即购买</a></p></div></li>"
+			str+="<li class='span10'><div class='channel-list-img'><a href='##' target='_blank'><img src='"+data[a].product[i].img+"' alt='"+data[a].product[i].name+"'></a></div><div class='channel-list-con clearfix'><dl class='channel-list-des'><dt>"+data[a].product[i].name+" <b>"+data[a].product[i].price+"</b><span>元起</span></dt><dd>"+data[a].product[i].tit+"</dd></dl><p class='channel-list-btn'><a href='buy.html?"+data[a].product[i].id+"&"+strnum+"' class='btn btn-line-primary'>立即购买</a></p></div></li>"
 		};
 		$(".row").html(str)
 		if(strnum=="01"){
