@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/buy.css">
+    <link rel="stylesheet" type="text/css" href="css/shopcar.css">
+    <script src="js/jquery_1.11.3.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/shopcar.js"></script>
+</head>
+<body>
+<div class="warp">
+    <div class="site-header site-mini-header">
+    <div class="header-bar" id="J_headerBar">
+    <div class="container">
+        <span class="pro-desc" id="J_headerBarDesc">小米5s 3GB内存+64GB容量 银色 1999元</span><a href="" class="btn btn-primary">立即购买</a>
+    </div>
+</div>
+        <div class="container">
+            <div class="header-logo">
+                <a class="logo ir" href="index.html" title="小米官网">小米官网</a>
+            </div>
+            <div class="header-title" id="J_miniHeaderTitle"></div>
+            <div class="topbar-info" id="J_userInfo"><span class="user"><a rel="nofollow" class="user-name" href="" target="_blank"><span class="name">1164527749</span><i class="iconfont">&#xe602;</i></a><ul class="user-menu" style="display: none;"><li><a rel="nofollow" href="//my.mi.com/portal" target="_blank">个人中心</a></li><li><a rel="nofollow" href="//order.mi.com/user/comment" target="_blank">评价晒单</a></li><li><a rel="nofollow" href="//order.mi.com/user/favorite" target="_blank">我的喜欢</a></li><li><a rel="nofollow" href="http://account.xiaomi.com/" target="_blank">小米账户</a></li><li><a rel="nofollow" href="//order.mi.com/site/logout">退出登录</a></li></ul></span><span class="sep">|</span><a rel="nofollow" class="link link-order" href="//static.mi.com/order/" target="_blank">我的订单</a></div>
+        </div>
+    </div>
+<!-- main -->
+<div class="cart-goods-list">
+    <div class="list-head clearfix">
+        <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll">&#xe609;</i>全选</div>
+        <div class="col col-img">&nbsp;</div>
+        <div class="col col-name">商品名称</div>
+        <div class="col col-price">单价</div>
+        <div class="col col-num">数量</div>
+        <div class="col col-total">小计</div>
+        <div class="col col-action">操作</div>
+    </div>
+    <div class="list-body" id="J_cartListBody">   
+        <div class="item-box"> 
+            <div class="item-table J_cartGoods">
+                <div class="item-row clearfix">
+                    <div class="col col-check">
+                        <i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox">&#xe609;
+                        </i>
+                    </div>
+                    <div class="col col-img">
+                        <a href="//item.mi.com/1162300013.html" target="_blank">
+                            <img alt="" src="//i1.mifile.cn/a1/pms_1465371544.17485773!80x80.jpg" width="80" height="80"> </a>
+                    </div>
+                    <div class="col col-name">
+                        <div class="tags">
+                        </div>
+                        <h3 class="name">
+                            <a class="" href="//item.mi.com/1162300013.html" target="_blank"> 红米手机3S 16GB 经典金色 16GB </a>
+                        </h3>
+                    </div>
+                    <div class="col col-price"> 699元 </div>
+                    <div class="col col-num">
+                        <div class="change-goods-num clearfix J_changeGoodsNum">
+                            <a href="##" class="J_minus">
+                                <i class="iconfont">&#xe608;</i>
+                            </a>
+                            <input tyep="text" name="2162300008_0_buy" value="1"class="goods-num J_goodsNum">
+                            <a href="##" class="J_plus">
+                                <i class="iconfont">&#xe607;</i>
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="col col-total"> 699元
+                        <p class="pre-info">
+                        </p>
+                    </div>
+                    <div class="col col-action">
+                        <a data-msg="确定删除吗？" href="###" title="删除" class="del J_delGoods">
+                            <i class="iconfont">&#xe606;</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-sub-box">
+                <div class="extend-buy J_showBaoxian">
+                    <i class="iconfont icon-plus">&#xe607;</i>意外保障服务 红米手机 ¥59/份
+                    <a href="##">查看详细条款
+                    </a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cart-bar clearfix" id="J_cartBar">
+                <div class="section-left">
+                    <a href="//list.mi.com/0" class="back-shopping J_goShoping" data-stat-id="2e6e02113fe6d236" onclick="_msq.push(['trackEvent', '08fae3d5cb3abaaf-2e6e02113fe6d236', '//list.mi.com/0', 'pcpid']);">继续购物</a>
+                    <span class="cart-total">共 <i id="J_cartTotalNum">5</i> 件商品，已选择 <i id="J_selTotalNum">4</i> 件</span>
+                    <span class="cart-coudan hide" id="J_coudanTip">
+                        ，还需 <i id="J_postFreeBalance">150</i> 元即可免邮费  <a href="##">立即凑单</a>
+                    </span>
+                </div>
+                <span class="activity-money hide">
+                    活动优惠：减 <i id="J_cartActivityMoney">0</i> 元
+                </span>
+                <span class="total-price">
+                    合计（不含运费）：<em id="J_cartTotalPrice">2398.00</em>元
+                </span>
+                <a href="javascript:void(0);" class="btn btn-a btn btn-primary" id="J_goCheckout" data-stat-id="a4887072ccf6c1d5" onclick="_msq.push(['trackEvent', '08fae3d5cb3abaaf-a4887072ccf6c1d5', 'javascript:void(0);', 'pcpid']);">去结算</a>
+
+                <div class="no-select-tip hide" id="J_noSelectTip">
+                    请勾选需要结算的商品
+                    <i class="arrow arrow-a"></i>
+                    <i class="arrow arrow-b"></i>
+                </div>
+            </div>
+<!--footer-top-->
+<div class="main_wrap">
+<div class="footer-top">
+    <ul>
+        <li><a herf="#"><img src="images/x_16.jpg" alt="" />1小时快修服务</a></li>
+        <li><a herf="#"><img src="images/x_18.jpg" alt="" />7天无理由退货</a></li>
+        <li><a herf="#"><img src="images/x_20.jpg" alt="" />15天免费换货</a></li>
+        <li><a herf="#"><img src="images/x_23.jpg" alt="" />满150元包邮</a></li>
+        <li class="bor0"><a herf="#"><img src="images/x_23.jpg" alt="" />520余家售后网点</a></li>
+    </ul>
+</div>
+<!--footr-middle-->
+<div class="foot-middle">
+    <div class="foot-middle-left">
+        <div class="flist1">
+            <ul>
+                <li class="flist1-li1"><a href="#">帮助中心</a></li>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式心</a></li>
+                <li><a href="#">配送方式</a></li>
+            </ul>
+        </div>
+        <div class="flist1">
+            <ul>
+                <li class="flist1-li1"><a href="#">帮助中心</a></li>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式心</a></li>
+                <li><a href="#">配送方式</a></li>
+            </ul>
+        </div>
+        <div class="flist1">
+            <ul>
+                <li class="flist1-li1"><a href="#">帮助中心</a></li>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式心</a></li>
+                <li><a href="#">预约亲临到店服务</a></li>
+            </ul>
+        </div>
+        <div class="flist1">
+            <ul>
+                <li class="flist1-li1"><a href="#">帮助中心</a></li>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">支付方式心</a></li>
+                <li><a href="#">配送方式</a></li>
+            </ul>
+        </div>
+        <div class="flist1">
+            <ul>
+                <li class="flist1-li1"><a href="#">关注我们</a></li>
+                <li><a href="#">新浪微博</a></li>
+                <li><a href="#">小米部落</a></li>
+                <li><a href="#">官方微信</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-middle-right">
+        <h3>400-100-5678</h3>
+        <p>周一至周日 8:00-18:00</p>
+        <p>（仅收市话费）</p>
+        <a href="#"><img src="images/12.jpg"/></a>
+    </div>
+</div>
+<!--footer-->
+<div class="footerwrap">
+    <div class="f">
+    <div class="footer left">
+        <a href="#"><img src="images/logo.jpg"/></a>
+        <p><a  class="a1" href="#">小米网</a>|<a href="#">MIUI</a>|<a href="#">多看阅读</a>|<a href="#">小米路由器</a>|<a href="#">小米后院</a>|<a href="#">小米天猫店</a>|<a href="#">小米淘宝直营店</a>|<a href="#">小米网盟</a>|<a href="#">问题反馈</a>|<a href="#">Select Region</a><span>&copy;mi.com 京ICP证11057号 京ICP备10046444号 京公网安备1101080号 京网文[2014]0059-0009号</span></p>
+    </div>
+    <div class="right fot">
+        <p class="p1"><img src="images/z_03.jpg"/><span>诚信网站</span></p>
+        <p class="p2"><img src="images/z_05.jpg"/><span>可信网站信用评价</span></p>
+        <p><img src="images/z_07.jpg"/><span>网上交易保障中心</span></p>
+    </div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

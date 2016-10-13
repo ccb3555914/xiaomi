@@ -19,6 +19,7 @@ $(document).ready(function() {
 	var tablistliname=""
 	var tabnum=0
 	var rightul1str=""
+	var rightul1str2=""
 	var usename=window.location.search.replace("?","")
 	if(usename!=""){
 		$(".user").html("<a href='###'>"+usename+"</a>")
@@ -34,12 +35,16 @@ $(document).ready(function() {
 		};
 		$(".tab-list").html(tablistli)
 		$(".tab-list li:first").addClass('tab-active')
+		for (var i = 0; i < dp[0].product.length; i++) {
+			rightul1str+="<li class='floor_goods_wrap_li'><a class='floor_goods_img'><img src='"+dp[0].product[i].img+"'></a><a class='floor_goods_tit'>"+dp[0].product[i].name+"</a><a class='floor_goods_price'>"+dp[0].product[i].price+"</a><a class='floor_goods_txt'>"+dp[0].product[i].tit+"</a><div class='review-wrapper'> <a href='##'> <span class='review'>"+dp[0].product[i].pl+"</span> <span class='author'> 来自于"+dp[0].product[i].from+"的评价 <span class='date'></span> </span> </a> </div><div class='flag'>"+dp[0].product[i].sale+"</div></li>"
+		};
+		$(".floor_goods_wrap1 .rightul").html(rightul1str)
 		$(".tab-list li").each(function  (index) {
-		$(this).mouseover(function(event) {
-			rightul1str=""
-			tablistliname=$(this).html()
-			for (var i = 0; i < dp.length; i++) {
-				if(tablistliname==dp[i].name){
+			$(this).mouseover(function(event) {
+				rightul1str=""
+				tablistliname=$(this).html()
+				for (var i = 0; i < dp.length; i++) {
+					if(tablistliname==dp[i].name){
 				tabnum=i
 				}
 			};
@@ -47,6 +52,7 @@ $(document).ready(function() {
 				rightul1str+="<li class='floor_goods_wrap_li'><a class='floor_goods_img'><img src='"+dp[tabnum].product[i].img+"'></a><a class='floor_goods_tit'>"+dp[tabnum].product[i].name+"</a><a class='floor_goods_price'>"+dp[tabnum].product[i].price+"</a><a class='floor_goods_txt'>"+dp[tabnum].product[i].tit+"</a><div class='review-wrapper'> <a href='##'> <span class='review'>"+dp[tabnum].product[i].pl+"</span> <span class='author'> 来自于"+dp[tabnum].product[i].from+"的评价 <span class='date'></span> </span> </a> </div><div class='flag'>"+dp[tabnum].product[i].sale+"</div></li>"
 			};
 			$(".floor_goods_wrap1 .rightul").html(rightul1str)
+			
 			$(".flag").each(function  (i) {
 			if($(".flag").eq(i).html()=="新品"){
 				$(this).addClass('flag-new')
@@ -57,7 +63,7 @@ $(document).ready(function() {
 			}else{
 				$(this).addClass('flag-saleoff')
 			}
-		})
+			})
 			$(this).addClass('tab-active')
 			$(this).siblings().removeClass('tab-active')
 			$(".floor_goods_wrap_li").each(function  (argument) {
@@ -182,7 +188,23 @@ $(document).ready(function() {
 	var strnavlist2=""
 	var strnavlist3=""
 	var htmlnum="0"
+	var strstar=""
+	var strwntj=""
 	$.get('js/nav.json',function (data) {
+		var star=data[0].star
+		for (var i = 0; i <star.length; i++) {
+			strstar+="<li><a href='buy.html?"+star[i].id+"'><img src='"+star[i].img+"' alt=''/></a><a href='buy.html?"+star[i].id+"'>"+star[i].name+"<span>"+star[i].tit+"</span></a></li>"
+			strwntj+="<li class='floor_goods_wrap_li'><a href='buy.html?"+star[i].id+"' class='floor_goods_img'><img src='"+star[i].img+"'></a><a href='buy.html?"+star[i].id+"' class='floor_goods_tit'>"+star[i].name+"</a><a class='floor_goods_txt'>"+star[i].tit+"</a><a href='buy.html?"+star[i].id+"' class='floor_goods_price'>"+star[i].price+"</a></li>"
+		};
+		$(".main2scroll").html(strstar)
+		$(".main2scroll li:eq(0),.main2scroll li:eq(5)").addClass('one')
+		$(".main2scroll li:eq(1),.main2scroll li:eq(6)").addClass('two')
+		$(".main2scroll li:eq(2),.main2scroll li:eq(7)").addClass('thr')
+		$(".main2scroll li:eq(3),.main2scroll li:eq(8)").addClass('fou')
+		$(".main2scroll li:eq(4),.main2scroll li:eq(9)").addClass('fiv')
+		$(".wntj").html(strwntj)
+		$(".wntj li:first").css("margin-left","0")
+		$(".wntj li:eq(5)").css("margin-left","0")
 		for (var i = 0; i < data.length; i++) {
 			strnav+="<li><p>"+data[i].name+"</p><span class='iconfont navright'>&#xe605;<span></li>"
 		}
@@ -247,14 +269,24 @@ $(document).ready(function() {
 	var width_mianli=$(".main2scroll li").outerWidth();
 	var len1=$(".main2scroll li").length
 	$(".main2scroll").css("width",(width_mianli+14)*len1)
-	var timer1=setInterval(function  (argument) {
+	var timer1=setInterval(move1,5000)
+	function  move1(argument) {
 		a++
 		if(a%2==0){
 			$(".main2scroll").stop().animate({"margin-left":0})
+			$(".control-prev").addClass('control-disabled')
+			$(".control-next").removeClass('control-disabled')
 		}else{
 			$(".main2scroll").stop().animate({"margin-left":-(width_mianli+14)*5+14})
+			$(".control-next").addClass('control-disabled')
+			$(".control-next").removeClass('control-disabled')
 		}
-	},3000)
-	
+	}
+	$(".control-prev").click(function  (argument) {
+		$(".main2scroll").stop().animate({"margin-left":0})
+	})
+	$(".control-next").click(function  (argument) {
+		$(".main2scroll").stop().animate({"margin-left":-(width_mianli+14)*5+14})
+	})
 
 })

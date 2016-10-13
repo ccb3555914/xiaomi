@@ -123,5 +123,19 @@ $(document).ready(function() {
 	$(".btn-primary").click(function  (argument) {
 		$("html,body").animate({scrollTop:0},"slow")
 	})
-	
+	if($.cookie("cart")){
+		var obj=JSON.parse($.cookie("cart"))
+	}else{
+		var obj={};
+	}
+
+	$(".btn-dakeLight").click(function  (argument) {
+		var colortext=$(".active:eq(1)").text().replace(/\s/,"")
+		var num=obj[id+$(".active:eq(1)").text()+$(".active:eq(0)").html()]||0;
+		var prodId=id+"&"+colortext+"&"+$(".active:eq(0)").html()
+		obj[prodId]=++num;
+		var objTostr=JSON.stringify(obj)
+		$.cookie("cart",objTostr)
+		window.location="shopcar.html"
+	})
 });

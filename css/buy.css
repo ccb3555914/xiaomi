@@ -137,6 +137,7 @@
     cursor: pointer;
 }
 .pro-nav-bar li a {
+    font-size: 16px;
     display: block;
     color: #333;
     outline: none;
@@ -295,6 +296,7 @@
 	font-size: 30px;
 }
 .pro-info p{
+    display: none;
 	line-height: 21px;
 	font-size: 14px;
 }

@@ -1,6 +1,16 @@
 ﻿[
 	{
 		"name":"手机 电话卡",
+		"star":[{"img":"img/list/star/09d0d196-9d12-49be-8c06-ddcdd40e9d89.png","name":"小米5 高配64GB","tit":"购机再赠小米活塞耳机 基础版","price":"1999","id":"00013"},
+			{"img":"img/list/star/0df5d106-ab01-4013-87de-a9793094245d.png","name":"小米Max","tit":"购机赠智能显示保护套","price":"1799","id":"00014"},
+			{"img":"img/list/star/f35e0d0a-afae-443c-a7e6-3a49c40e2df1.png","name":"红米Pro 十核双摄","tit":"赠智能显示保护套+Type-C转接头","price":"3499","id":"00021"},
+			{"img":"img/list/star/725a37e3-78b7-4298-8098-c40097bf179d.png","name":"小米笔记本","tit":"独立显卡、超轻薄、金属机身","price":"1999","id":"00029"},
+			{"img":"img/list/star/4c68c352-fbd3-452d-be90-7b47e4f6ce76.png","name":"小米平板2 16GB现货","tit":"轻薄全金属，海量内容","price":"999","id":"00016"},
+			{"img":"img/list/star/74dd9736-f254-4964-a06a-24f0befb21ac.png","name":"小米电视3s 48英寸","tit":"购机再赠小米活塞耳机 基础版","price":"1999","id":"00033"},
+			{"img":"img/list/star/T1z4WjB4Ev1RXrhCrK.jpg","name":"小米盒子3","tit":"全新升级 64位 4K网络机顶盒","price":"249","id":"00034"},
+			{"img":"img/list/star/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png","name":"小米手环 2","tit":"每天早10点开售","price":"149","id":"00032"},
+			{"img":"img/list/star/1d33d6ed-4a5e-4203-86c1-99f61c52a6c4.png","name":"VR眼镜玩具版量产版","tit":"逼真沉浸感 舒适观看新体验","price":"49","id":"00043"},
+			{"img":"img/list/star/cf6660a3-d424-4248-889f-0eed1e99a342.png","name":"米家飞利浦智睿台灯二代","tit":"感知环境光，主动优化场景照明","price":"199","id":"00044"}],
 		"id":"0011",
 		"product":[{"img":"img/navjsonimg/5sdaohang80.jpg","name":"小米5s","price":"1999元起","id":"00011"},
 			{"img":"img/navjsonimg/5splusdaohang80.jpg","name":"小米5s Plus","price":"2299元起","id":"00012"},
