@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	var cookiename=$.cookie("useName")
+$(".name").html(cookiename)
 	var num=window.location.search.replace("?","").split("&")[1]
 	var id=window.location.search.replace("?","").split("&")[0]
 	var a=0

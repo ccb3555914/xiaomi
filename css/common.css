@@ -38,10 +38,12 @@ b{font-weight: normal;}
 	display: inline-block;
 	width: 120px;
 	height: 40px;
-	color: #fff;
-    background: #ff6700;
     text-align: center;
 	margin-left: 15px;
+}
+#top .cart1{
+    color: #fff;
+    background: #ff6700;
 }
 #top .cart:hover{color: #ff6700;
     background: #fff;}
@@ -265,10 +267,12 @@ a:hover{
 }
 /*footer-top*/
 .footer-top{margin:0 auto;width:1226px;height:52px;border-bottom:1px solid #e0e0e0;padding-top:27px;}
-.footer-top li{float:left;border-right:1px solid #e0e0e0;height:25px;text-align:center;line-height:25px;padding:0 65px;}
+.footer-top li{float:left;border-right:1px solid #e0e0e0;height:25px;text-align:center;line-height:25px;padding:0 58px;}
 .footer-top img{float:left;margin-right:7px;}
 .footer-top .bor0{border-right:0;}
-
+.main_wrap a{
+    font-size: 14px;
+}
 /*foot-middle-left*/
 .foot-middle{width:100%;height:192px;margin:0 auto;}
 .foot-middle-left{width:983px;height:192px;float:left;}

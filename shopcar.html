@@ -14,20 +14,27 @@
 <body>
 <div class="warp">
     <div class="site-header site-mini-header">
-    <div class="header-bar" id="J_headerBar">
-    <div class="container">
-        <span class="pro-desc" id="J_headerBarDesc">小米5s 3GB内存+64GB容量 银色 1999元</span><a href="" class="btn btn-primary">立即购买</a>
-    </div>
-</div>
         <div class="container">
             <div class="header-logo">
                 <a class="logo ir" href="index.html" title="小米官网">小米官网</a>
             </div>
-            <div class="header-title" id="J_miniHeaderTitle"></div>
-            <div class="topbar-info" id="J_userInfo"><span class="user"><a rel="nofollow" class="user-name" href="" target="_blank"><span class="name">1164527749</span><i class="iconfont">&#xe602;</i></a><ul class="user-menu" style="display: none;"><li><a rel="nofollow" href="//my.mi.com/portal" target="_blank">个人中心</a></li><li><a rel="nofollow" href="//order.mi.com/user/comment" target="_blank">评价晒单</a></li><li><a rel="nofollow" href="//order.mi.com/user/favorite" target="_blank">我的喜欢</a></li><li><a rel="nofollow" href="http://account.xiaomi.com/" target="_blank">小米账户</a></li><li><a rel="nofollow" href="//order.mi.com/site/logout">退出登录</a></li></ul></span><span class="sep">|</span><a rel="nofollow" class="link link-order" href="//static.mi.com/order/" target="_blank">我的订单</a></div>
+            <div class="header-title has-more" id="J_miniHeaderTitle"><h2>我的购物车</h2><p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p></div>
+            <div class="topbar-info" id="J_userInfo"><span class="user"><a rel="nofollow" class="user-name" href="" target="_blank"><span class="name">1164527749</span><i class="iconfont">&#xe602;</i></a> </span><span class="sep">|</span><a rel="nofollow" class="link link-order" href="//static.mi.com/order/" target="_blank">我的订单</a></div>
         </div>
     </div>
 <!-- main -->
+<div class="modal fade modal-hide  modal-alert in" id="J_modalAlert" aria-hidden="false">
+    <div class="modal-bd">
+        <div class="text">
+            <h3 id="J_alertMsg">确定删除吗？</h3>
+        </div>
+        <div class="actions">
+            <button class="btn btn-gray" data-dismiss="modal" id="J_alertCancel">取消</button>
+            <button class="btn btn-primary" data-dismiss="modal" id="J_alertOk">确定</button>
+        </div>
+        <a class="close"><i class="iconfont">&#xe606;</i></a>
+    </div>
+</div>
 <div class="cart-goods-list">
     <div class="list-head clearfix">
         <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll">&#xe609;</i>全选</div>
@@ -92,7 +99,7 @@
 </div>
 <div class="cart-bar clearfix" id="J_cartBar">
                 <div class="section-left">
-                    <a href="//list.mi.com/0" class="back-shopping J_goShoping" data-stat-id="2e6e02113fe6d236" onclick="_msq.push(['trackEvent', '08fae3d5cb3abaaf-2e6e02113fe6d236', '//list.mi.com/0', 'pcpid']);">继续购物</a>
+                    <a href="list.html" class="back-shopping J_goShoping">继续购物</a>
                     <span class="cart-total">共 <i id="J_cartTotalNum">5</i> 件商品，已选择 <i id="J_selTotalNum">4</i> 件</span>
                     <span class="cart-coudan hide" id="J_coudanTip">
                         ，还需 <i id="J_postFreeBalance">150</i> 元即可免邮费  <a href="##">立即凑单</a>
@@ -104,7 +111,7 @@
                 <span class="total-price">
                     合计（不含运费）：<em id="J_cartTotalPrice">2398.00</em>元
                 </span>
-                <a href="javascript:void(0);" class="btn btn-a btn btn-primary" id="J_goCheckout" data-stat-id="a4887072ccf6c1d5" onclick="_msq.push(['trackEvent', '08fae3d5cb3abaaf-a4887072ccf6c1d5', 'javascript:void(0);', 'pcpid']);">去结算</a>
+                <a href="###" class="btn btn-a btn btn-primary" id="J_goCheckout">去结算</a>
 
                 <div class="no-select-tip hide" id="J_noSelectTip">
                     请勾选需要结算的商品

@@ -20,16 +20,34 @@ $(document).ready(function() {
 	var tabnum=0
 	var rightul1str=""
 	var rightul1str2=""
-	var usename=window.location.search.replace("?","")
+	var usename=""
+	usename=window.location.search.replace("?","");
+	console.log(usename);
 	if(usename!=""){
-		$(".user").html("<a href='###'>"+usename+"</a>")
+		$(".user").html("<a class='bs' href='###'>"+usename+"<i class='iconfont'>&#xe602;</i><ul class='user-menu'><li><a rel='nofollow' href=''>个人中心</a></li><li><a rel='nofollow' href=''>评价晒单</a></li><li><a rel='nofollow' href=''>我的喜欢</a></li><li><a rel='nofollow' href=''>小米账户</a></li><li><a class='tczh' rel='nofollow' href='###'>退出账户</a></li></ul></a>")
 		$(".mydd").css("display","inline-block")
+		$(".user").mouseover(function  (argument) {
+			$(this).css("background","#fff")
+			$("#top .user .bs").css("color","#ff6700")
+		})
+		$(".user").mouseleave(function(event) {
+			$(this).css("background","#000")
+			$("#top .user .bs").css("color","#b0b0b0")
+		});
 	}
+	$(".tczh").click(function  (argument) {
+		window.location="index.html?"
+	})
+// 	{
+//     background: #fff;
+// }
+// #top .user:hover a{
+//     color: #ff6700;
+// }
 	$.get('js/product01.json',function (data) {
 		var datanav=data.nav
 		var znyj=data.znyj
 		var dp=data.dp
-		
 		for (var i = 0; i < dp.length; i++) {
 			tablistli+="<li>"+dp[i].name+"</li>"
 		};
@@ -51,7 +69,7 @@ $(document).ready(function() {
 			for (var i = 0; i < dp[tabnum].product.length; i++) {
 				rightul1str+="<li class='floor_goods_wrap_li'><a class='floor_goods_img'><img src='"+dp[tabnum].product[i].img+"'></a><a class='floor_goods_tit'>"+dp[tabnum].product[i].name+"</a><a class='floor_goods_price'>"+dp[tabnum].product[i].price+"</a><a class='floor_goods_txt'>"+dp[tabnum].product[i].tit+"</a><div class='review-wrapper'> <a href='##'> <span class='review'>"+dp[tabnum].product[i].pl+"</span> <span class='author'> 来自于"+dp[tabnum].product[i].from+"的评价 <span class='date'></span> </span> </a> </div><div class='flag'>"+dp[tabnum].product[i].sale+"</div></li>"
 			};
-			$(".floor_goods_wrap1 .rightul").html(rightul1str)
+			$(this).parents("#floor_1").siblings(".floor_goods_wrap1").find(".rightul").html(rightul1str)
 			
 			$(".flag").each(function  (i) {
 			if($(".flag").eq(i).html()=="新品"){
@@ -125,7 +143,7 @@ $(document).ready(function() {
 	});
 	$.get("js/banner.json",function(data) {
 		$.each(data,function  (index,value) {
-			$("<li><a href='' style='background:url("+value+") no-repeat center center'></a></li>").appendTo("#scroll_box ul");
+			$("<li><a href='buy.html?"+value.id+"' style='background:url("+value.img+") no-repeat center center'></a></li>").appendTo("#scroll_box ul");
 			$("<a>").appendTo($(".slider-nav"))
 		})
 		 $("#scroll_box li:first-child").clone().appendTo(".clearfix1")
@@ -233,7 +251,7 @@ $(document).ready(function() {
 				}
 			};
 			for (var i = 0; i < data[num].product.length; i++) {
-			strnavlist1+="<li><a href='buy.html?"+data[num].product[i].id+"' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy'>选购</a></li>"
+			strnavlist1+="<li><a href='buy.html?"+data[num].product[i].id+"' title=''><img src='"+data[num].product[i].img+"' alt=''><span class='text'>"+data[num].product[i].name+"</span></a><a class='btn-buy' href='buy.html?"+data[num].product[i].id+"'>选购</a></li>"
 				
 			}
 				for (var i = 6; i < data[num].product.length; i++) {

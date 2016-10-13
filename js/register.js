@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	var uname=$.cookie("useName")
 	//手机号
 	$("#phone").blur(function () {
 		var mob=$("#phone").val();
@@ -9,11 +10,15 @@ $(document).ready(function() {
 	  	}else if(!str.test(mob)){
 	  		$(".dis_phone").css("display","block")
 	  		$(this).css("border-color","#ff6700")
+	  	}else if(uname==mob){
+	  		$(".dis_samephone").css("display","block")
+	  		$(this).css("border-color","#ff6700")
 	  	}
 	});
 	$("#phone").keydown(function() {
 		$(".dis_nophone").css("display","none")
 		$(".dis_phone").css("display","none")
+		$(".dis_samephone").css("display","none")
 	  	$(this).css("border-color","#e8e8e8")
 	});
 	//验证码

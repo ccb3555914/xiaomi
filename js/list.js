@@ -71,7 +71,17 @@ $(document).ready(function() {
 		}else if(strnum=="03"){
 		$(".what").html("路由器 · 智能硬件")
 		$(".channel-nav .current").css("padding","0 5px")
-
 		}
+		var cookiename=$.cookie("useName")
+		$(".user").text(cookiename)
+		var flag=false
+		$(".ckqb").click(function  (argument) {
+			flag=!flag
+			if(flag){
+				$(".channel-nav").css("overflow","visible")
+			}else{
+				$(".channel-nav").css("overflow","hidden")
+			}
+		})
 	});
 });
